@@ -1,0 +1,1 @@
+A county may have several cities or towns within it .

@@ -1,0 +1,10 @@
+share/
+data/
+LMs/
+.ipynb_checkpoints/*
+._*
+pip-selfcheck.json
+*.pyc
+bin
+lib
+.DS_store
