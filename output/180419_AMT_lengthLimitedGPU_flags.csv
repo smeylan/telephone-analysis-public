@@ -1,0 +1,494 @@
+chain,flag_type,reason,stimulus_id,subject_id,upstream_pointer,user
+0,self,Contains speech errors,13,edf8f705ab7241a191fa3ae24e381ebc,3,edf8f705ab7241a191fa3ae24e381ebc
+0,self,Speech stops or starts abruptly / speech sounds cut off,27,edf8f705ab7241a191fa3ae24e381ebc,0,edf8f705ab7241a191fa3ae24e381ebc
+-1,self,Other: someone accidentally came into the room when i pressed record and didn't know they were speaking,48,edf8f705ab7241a191fa3ae24e381ebc,-1,edf8f705ab7241a191fa3ae24e381ebc
+0,self,Other: something is wrong with recorder,23,edf8f705ab7241a191fa3ae24e381ebc,2,edf8f705ab7241a191fa3ae24e381ebc
+0,self,Other: could not understand,18,edf8f705ab7241a191fa3ae24e381ebc,4,edf8f705ab7241a191fa3ae24e381ebc
+-1,self,Speech stops or starts abruptly / speech sounds cut off,42,edf8f705ab7241a191fa3ae24e381ebc,-1,edf8f705ab7241a191fa3ae24e381ebc
+0,self,Speech stops or starts abruptly / speech sounds cut off,29,edf8f705ab7241a191fa3ae24e381ebc,3,edf8f705ab7241a191fa3ae24e381ebc
+0,self,Speech stops or starts abruptly / speech sounds cut off,36,edf8f705ab7241a191fa3ae24e381ebc,3,edf8f705ab7241a191fa3ae24e381ebc
+0,self,Other: I only heard half of the sentence and recorded what i heard,5,edf8f705ab7241a191fa3ae24e381ebc,1,edf8f705ab7241a191fa3ae24e381ebc
+0,self,Speech stops or starts abruptly / speech sounds cut off,37,edf8f705ab7241a191fa3ae24e381ebc,2,edf8f705ab7241a191fa3ae24e381ebc
+0,self,Other: could not hear what was said,6,edf8f705ab7241a191fa3ae24e381ebc,0,edf8f705ab7241a191fa3ae24e381ebc
+0,self,Other: could not understand,9,edf8f705ab7241a191fa3ae24e381ebc,2,edf8f705ab7241a191fa3ae24e381ebc
+0,stimulus,Contains speech errors,0,bbcab9c212ff4a859e2f0067f228467a,15,bbcab9c212ff4a859e2f0067f228467a
+0,stimulus,Contains speech errors,1,bbcab9c212ff4a859e2f0067f228467a,17,bbcab9c212ff4a859e2f0067f228467a
+0,stimulus,Contains obscenities or objectionable content,3,bbcab9c212ff4a859e2f0067f228467a,18,bbcab9c212ff4a859e2f0067f228467a
+0,stimulus,Contains speech errors,4,bbcab9c212ff4a859e2f0067f228467a,15,bbcab9c212ff4a859e2f0067f228467a
+0,stimulus,Contains speech errors,5,bbcab9c212ff4a859e2f0067f228467a,18,bbcab9c212ff4a859e2f0067f228467a
+0,stimulus,Contains speech errors,6,bbcab9c212ff4a859e2f0067f228467a,8,bbcab9c212ff4a859e2f0067f228467a
+0,stimulus,Contains speech errors,7,bbcab9c212ff4a859e2f0067f228467a,17,bbcab9c212ff4a859e2f0067f228467a
+0,stimulus,Contains speech errors,8,bbcab9c212ff4a859e2f0067f228467a,21,bbcab9c212ff4a859e2f0067f228467a
+0,stimulus,Contains speech errors,9,bbcab9c212ff4a859e2f0067f228467a,16,bbcab9c212ff4a859e2f0067f228467a
+0,stimulus,Contains speech errors,11,bbcab9c212ff4a859e2f0067f228467a,17,bbcab9c212ff4a859e2f0067f228467a
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,14,bbcab9c212ff4a859e2f0067f228467a,11,bbcab9c212ff4a859e2f0067f228467a
+0,stimulus,Contains speech errors,16,bbcab9c212ff4a859e2f0067f228467a,18,bbcab9c212ff4a859e2f0067f228467a
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,17,bbcab9c212ff4a859e2f0067f228467a,15,bbcab9c212ff4a859e2f0067f228467a
+0,stimulus,Contains speech errors,18,bbcab9c212ff4a859e2f0067f228467a,25,bbcab9c212ff4a859e2f0067f228467a
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,20,bbcab9c212ff4a859e2f0067f228467a,9,bbcab9c212ff4a859e2f0067f228467a
+0,stimulus,Contains speech errors,21,bbcab9c212ff4a859e2f0067f228467a,25,bbcab9c212ff4a859e2f0067f228467a
+0,stimulus,Contains speech errors,22,bbcab9c212ff4a859e2f0067f228467a,18,bbcab9c212ff4a859e2f0067f228467a
+0,stimulus,Contains obscenities or objectionable content,23,bbcab9c212ff4a859e2f0067f228467a,22,bbcab9c212ff4a859e2f0067f228467a
+0,stimulus,Contains speech errors,25,bbcab9c212ff4a859e2f0067f228467a,11,bbcab9c212ff4a859e2f0067f228467a
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,27,bbcab9c212ff4a859e2f0067f228467a,18,bbcab9c212ff4a859e2f0067f228467a
+0,stimulus,Contains obscenities or objectionable content,28,bbcab9c212ff4a859e2f0067f228467a,9,bbcab9c212ff4a859e2f0067f228467a
+0,stimulus,Contains speech errors,29,bbcab9c212ff4a859e2f0067f228467a,19,bbcab9c212ff4a859e2f0067f228467a
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,31,bbcab9c212ff4a859e2f0067f228467a,23,bbcab9c212ff4a859e2f0067f228467a
+0,stimulus,Contains speech errors,32,bbcab9c212ff4a859e2f0067f228467a,18,bbcab9c212ff4a859e2f0067f228467a
+0,stimulus,Contains speech errors,35,bbcab9c212ff4a859e2f0067f228467a,20,bbcab9c212ff4a859e2f0067f228467a
+0,stimulus,Contains speech errors,36,bbcab9c212ff4a859e2f0067f228467a,14,bbcab9c212ff4a859e2f0067f228467a
+0,stimulus,Contains speech errors,37,bbcab9c212ff4a859e2f0067f228467a,20,bbcab9c212ff4a859e2f0067f228467a
+0,stimulus,Contains speech errors,38,bbcab9c212ff4a859e2f0067f228467a,24,bbcab9c212ff4a859e2f0067f228467a
+-1,stimulus,Contains speech errors,42,bbcab9c212ff4a859e2f0067f228467a,-1,bbcab9c212ff4a859e2f0067f228467a
+-1,self,Contains obscenities or objectionable content,46,bbcab9c212ff4a859e2f0067f228467a,-1,bbcab9c212ff4a859e2f0067f228467a
+-1,stimulus,Speech stops or starts abruptly / speech sounds cut off,49,bbcab9c212ff4a859e2f0067f228467a,-1,bbcab9c212ff4a859e2f0067f228467a
+-1,stimulus,Speech stops or starts abruptly / speech sounds cut off,50,bbcab9c212ff4a859e2f0067f228467a,-1,bbcab9c212ff4a859e2f0067f228467a
+0,self,Speech stops or starts abruptly / speech sounds cut off,6,4abc2f62cd5b45a0b976ce96f8439374,4,4abc2f62cd5b45a0b976ce96f8439374
+0,self,Other: muffled,29,5c0677627cc8438187eda14b606ac274,30,5c0677627cc8438187eda14b606ac274
+0,self,Other: Could understand any of what was said,25,10a36c1554374641949a698f7b9a9691,6,10a36c1554374641949a698f7b9a9691
+-1,self,Other: too loud,46,d0349fc6268e4cc185a52e5a7a1a6d97,-1,d0349fc6268e4cc185a52e5a7a1a6d97
+0,self,Speech stops or starts abruptly / speech sounds cut off,0,1556cc858f0f4b60ad2b2cf3b60778a3,3,1556cc858f0f4b60ad2b2cf3b60778a3
+0,self,Contains speech errors,33,dab01f9c0ba445e2bdf783471467f995,20,dab01f9c0ba445e2bdf783471467f995
+0,self,Contains speech errors,36,ab43ac6a79884306bdc7de5f4583873d,8,ab43ac6a79884306bdc7de5f4583873d
+0,self,Other: I could not hear any of the words being spoken,28,805b2dbf2fdc4b7da527a1990caa2cec,9,805b2dbf2fdc4b7da527a1990caa2cec
+0,self,Contains speech errors,0,74afcbdee77241778bec3c75c48db3c4,0,74afcbdee77241778bec3c75c48db3c4
+0,self,Contains speech errors,1,74afcbdee77241778bec3c75c48db3c4,1,74afcbdee77241778bec3c75c48db3c4
+0,self,Contains speech errors,3,74afcbdee77241778bec3c75c48db3c4,0,74afcbdee77241778bec3c75c48db3c4
+0,self,Speech stops or starts abruptly / speech sounds cut off,4,74afcbdee77241778bec3c75c48db3c4,0,74afcbdee77241778bec3c75c48db3c4
+0,self,Contains speech errors,5,74afcbdee77241778bec3c75c48db3c4,0,74afcbdee77241778bec3c75c48db3c4
+0,self,Speech stops or starts abruptly / speech sounds cut off,6,74afcbdee77241778bec3c75c48db3c4,0,74afcbdee77241778bec3c75c48db3c4
+0,self,Contains speech errors,7,74afcbdee77241778bec3c75c48db3c4,0,74afcbdee77241778bec3c75c48db3c4
+0,self,Contains speech errors,8,74afcbdee77241778bec3c75c48db3c4,1,74afcbdee77241778bec3c75c48db3c4
+0,self,Contains speech errors,10,74afcbdee77241778bec3c75c48db3c4,1,74afcbdee77241778bec3c75c48db3c4
+0,self,Contains speech errors,12,74afcbdee77241778bec3c75c48db3c4,3,74afcbdee77241778bec3c75c48db3c4
+0,self,Speech stops or starts abruptly / speech sounds cut off,13,74afcbdee77241778bec3c75c48db3c4,2,74afcbdee77241778bec3c75c48db3c4
+0,self,Contains speech errors,14,74afcbdee77241778bec3c75c48db3c4,0,74afcbdee77241778bec3c75c48db3c4
+0,self,Contains speech errors,15,74afcbdee77241778bec3c75c48db3c4,2,74afcbdee77241778bec3c75c48db3c4
+0,self,Contains speech errors,17,74afcbdee77241778bec3c75c48db3c4,0,74afcbdee77241778bec3c75c48db3c4
+0,self,Contains speech errors,19,74afcbdee77241778bec3c75c48db3c4,0,74afcbdee77241778bec3c75c48db3c4
+0,self,Contains speech errors,20,74afcbdee77241778bec3c75c48db3c4,1,74afcbdee77241778bec3c75c48db3c4
+0,self,Contains speech errors,21,74afcbdee77241778bec3c75c48db3c4,1,74afcbdee77241778bec3c75c48db3c4
+0,self,Contains speech errors,22,74afcbdee77241778bec3c75c48db3c4,1,74afcbdee77241778bec3c75c48db3c4
+0,self,Contains speech errors,24,74afcbdee77241778bec3c75c48db3c4,1,74afcbdee77241778bec3c75c48db3c4
+0,self,Contains speech errors,25,74afcbdee77241778bec3c75c48db3c4,0,74afcbdee77241778bec3c75c48db3c4
+0,self,Contains speech errors,26,74afcbdee77241778bec3c75c48db3c4,1,74afcbdee77241778bec3c75c48db3c4
+0,self,Contains speech errors,27,74afcbdee77241778bec3c75c48db3c4,1,74afcbdee77241778bec3c75c48db3c4
+0,self,Contains speech errors,28,74afcbdee77241778bec3c75c48db3c4,2,74afcbdee77241778bec3c75c48db3c4
+0,self,Contains speech errors,29,74afcbdee77241778bec3c75c48db3c4,1,74afcbdee77241778bec3c75c48db3c4
+0,self,Contains speech errors,30,74afcbdee77241778bec3c75c48db3c4,0,74afcbdee77241778bec3c75c48db3c4
+0,self,Contains speech errors,31,74afcbdee77241778bec3c75c48db3c4,2,74afcbdee77241778bec3c75c48db3c4
+0,self,Speech stops or starts abruptly / speech sounds cut off,32,74afcbdee77241778bec3c75c48db3c4,0,74afcbdee77241778bec3c75c48db3c4
+0,self,Contains speech errors,33,74afcbdee77241778bec3c75c48db3c4,2,74afcbdee77241778bec3c75c48db3c4
+0,self,Contains speech errors,36,74afcbdee77241778bec3c75c48db3c4,2,74afcbdee77241778bec3c75c48db3c4
+0,self,Contains speech errors,37,74afcbdee77241778bec3c75c48db3c4,1,74afcbdee77241778bec3c75c48db3c4
+-1,self,Speech stops or starts abruptly / speech sounds cut off,40,74afcbdee77241778bec3c75c48db3c4,-1,74afcbdee77241778bec3c75c48db3c4
+-1,self,Speech stops or starts abruptly / speech sounds cut off,46,74afcbdee77241778bec3c75c48db3c4,-1,74afcbdee77241778bec3c75c48db3c4
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,25,79898d5889764da58052ff63b6d18806,7,79898d5889764da58052ff63b6d18806
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,29,79898d5889764da58052ff63b6d18806,12,79898d5889764da58052ff63b6d18806
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,23,79898d5889764da58052ff63b6d18806,13,79898d5889764da58052ff63b6d18806
+0,stimulus,Contains speech errors,33,f10793460a41442eaf56f7ded13b9924,21,f10793460a41442eaf56f7ded13b9924
+0,stimulus,Other: I screwed up my recording,10,f10793460a41442eaf56f7ded13b9924,7,f10793460a41442eaf56f7ded13b9924
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,25,f10793460a41442eaf56f7ded13b9924,10,f10793460a41442eaf56f7ded13b9924
+0,stimulus,Other: Can't understand at all,22,f10793460a41442eaf56f7ded13b9924,11,f10793460a41442eaf56f7ded13b9924
+0,self,Other: Could not understand or hear anything,32,f10793460a41442eaf56f7ded13b9924,15,f10793460a41442eaf56f7ded13b9924
+0,self,Contains speech errors,8,aec6a83b7a6f4297a2a5d2c6ac47be85,20,aec6a83b7a6f4297a2a5d2c6ac47be85
+0,self,Other: Couldn't understand file at all.,28,aec6a83b7a6f4297a2a5d2c6ac47be85,9,aec6a83b7a6f4297a2a5d2c6ac47be85
+0,self,Contains speech errors,37,aec6a83b7a6f4297a2a5d2c6ac47be85,20,aec6a83b7a6f4297a2a5d2c6ac47be85
+1,self,Other: Could not hear what was said.,19,67497f6ffb7e47d795ea7b655ccdd0ca,0,67497f6ffb7e47d795ea7b655ccdd0ca
+0,self,"Other: Missed what was said entirely
+",18,67497f6ffb7e47d795ea7b655ccdd0ca,10,67497f6ffb7e47d795ea7b655ccdd0ca
+0,self,Speech stops or starts abruptly / speech sounds cut off,20,67497f6ffb7e47d795ea7b655ccdd0ca,4,67497f6ffb7e47d795ea7b655ccdd0ca
+0,self,Contains speech errors,16,67497f6ffb7e47d795ea7b655ccdd0ca,8,67497f6ffb7e47d795ea7b655ccdd0ca
+0,stimulus,Other: COuld not make out what was said,18,a49f34124c8b4a6ab2bd066736760788,15,a49f34124c8b4a6ab2bd066736760788
+0,stimulus,Contains speech errors,5,a49f34124c8b4a6ab2bd066736760788,11,a49f34124c8b4a6ab2bd066736760788
+-1,self,Other: Did not make out what I was supposed to say but I can record,48,a49f34124c8b4a6ab2bd066736760788,-1,a49f34124c8b4a6ab2bd066736760788
+0,stimulus,Other: Could not make any sense of the recording,20,a49f34124c8b4a6ab2bd066736760788,6,a49f34124c8b4a6ab2bd066736760788
+0,stimulus,Contains speech errors,0,5f79d04e2f934f27ac5a37fefa1b8f11,4,5f79d04e2f934f27ac5a37fefa1b8f11
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,12,5f79d04e2f934f27ac5a37fefa1b8f11,9,5f79d04e2f934f27ac5a37fefa1b8f11
+0,self,"Other: too long again but it was gibberish
+i couldn't understand what the person said",33,f1f031c96dc64732afb95fe3643f804f,31,f1f031c96dc64732afb95fe3643f804f
+0,self,Speech stops or starts abruptly / speech sounds cut off,3,f1f031c96dc64732afb95fe3643f804f,26,f1f031c96dc64732afb95fe3643f804f
+0,self,Contains speech errors,37,f1f031c96dc64732afb95fe3643f804f,23,f1f031c96dc64732afb95fe3643f804f
+0,self,Other: couldn't make out the speaker,31,f1f031c96dc64732afb95fe3643f804f,28,f1f031c96dc64732afb95fe3643f804f
+-1,self,"Other: I was told recording is too long try again
+start recording is grayed out
+i hear h=nothing whe i lay but i cant record again",44,f1f031c96dc64732afb95fe3643f804f,-1,f1f031c96dc64732afb95fe3643f804f
+0,self,Speech stops or starts abruptly / speech sounds cut off,15,821252d8660547b98b13f0103b19af8a,7,821252d8660547b98b13f0103b19af8a
+0,self,Other: missed,28,821252d8660547b98b13f0103b19af8a,9,821252d8660547b98b13f0103b19af8a
+0,self,Speech stops or starts abruptly / speech sounds cut off,29,821252d8660547b98b13f0103b19af8a,18,821252d8660547b98b13f0103b19af8a
+0,self,Speech stops or starts abruptly / speech sounds cut off,17,821252d8660547b98b13f0103b19af8a,14,821252d8660547b98b13f0103b19af8a
+-1,self,"Other: You can probably understand it, but it has inexplicable pops, and I assume everything I record on this will.",47,73043e9f63be49f2ade780201c1e5665,-1,73043e9f63be49f2ade780201c1e5665
+0,self,Contains speech errors,20,d14ebf1fffae49d8b76323eb6c393120,4,d14ebf1fffae49d8b76323eb6c393120
+-1,self,Contains speech errors,48,d14ebf1fffae49d8b76323eb6c393120,-1,d14ebf1fffae49d8b76323eb6c393120
+0,self,Other: unclear,32,2fc105ee7979442fa91d0b895a909b4c,12,2fc105ee7979442fa91d0b895a909b4c
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,24,c2bbae951ae84dc48207b1935389d8de,22,c2bbae951ae84dc48207b1935389d8de
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,10,c2bbae951ae84dc48207b1935389d8de,10,c2bbae951ae84dc48207b1935389d8de
+0,self,Contains speech errors,27,c2bbae951ae84dc48207b1935389d8de,21,c2bbae951ae84dc48207b1935389d8de
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,20,c2bbae951ae84dc48207b1935389d8de,10,c2bbae951ae84dc48207b1935389d8de
+1,stimulus,Speech stops or starts abruptly / speech sounds cut off,22,c2bbae951ae84dc48207b1935389d8de,2,c2bbae951ae84dc48207b1935389d8de
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,25,c2bbae951ae84dc48207b1935389d8de,13,c2bbae951ae84dc48207b1935389d8de
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,28,c2bbae951ae84dc48207b1935389d8de,7,c2bbae951ae84dc48207b1935389d8de
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,37,c2bbae951ae84dc48207b1935389d8de,21,c2bbae951ae84dc48207b1935389d8de
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,1,c2bbae951ae84dc48207b1935389d8de,23,c2bbae951ae84dc48207b1935389d8de
+0,stimulus,Contains speech errors,4,c2bbae951ae84dc48207b1935389d8de,20,c2bbae951ae84dc48207b1935389d8de
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,9,c2bbae951ae84dc48207b1935389d8de,18,c2bbae951ae84dc48207b1935389d8de
+-1,self,Other: my kid came in the room and yelled in the beginning,48,52e93a1250ea44cc8aed5661f9885ae9,-1,52e93a1250ea44cc8aed5661f9885ae9
+0,self,Other: Couldn't guess,20,e4d333ad2de54f93b023b7de0a005bb6,6,e4d333ad2de54f93b023b7de0a005bb6
+0,self,Other: too much back ground noise,13,fb8a465739514cae8639bd3a1468d6c6,20,fb8a465739514cae8639bd3a1468d6c6
+0,stimulus,Other: very low speech with background noise drowning it out,2,fb8a465739514cae8639bd3a1468d6c6,20,fb8a465739514cae8639bd3a1468d6c6
+0,self,Speech stops or starts abruptly / speech sounds cut off,28,fb8a465739514cae8639bd3a1468d6c6,12,fb8a465739514cae8639bd3a1468d6c6
+-1,self,Other: spoke to fast,40,fb8a465739514cae8639bd3a1468d6c6,-1,fb8a465739514cae8639bd3a1468d6c6
+-1,self,"Other: Mic was accidentally off, and system would not let rerecord",49,d76d807f8b3a4dcfa89732dffe800874,-1,d76d807f8b3a4dcfa89732dffe800874
+-1,stimulus,Speech stops or starts abruptly / speech sounds cut off,46,7a059b608ca84c37b2fc89b7fa2450c6,-1,7a059b608ca84c37b2fc89b7fa2450c6
+-1,self,Speech stops or starts abruptly / speech sounds cut off,40,7a059b608ca84c37b2fc89b7fa2450c6,-1,7a059b608ca84c37b2fc89b7fa2450c6
+-1,self,Contains speech errors,50,8921af1b300049c0bdfd7ab9600bb87a,-1,8921af1b300049c0bdfd7ab9600bb87a
+0,self,Other: could not catch it,7,8921af1b300049c0bdfd7ab9600bb87a,9,8921af1b300049c0bdfd7ab9600bb87a
+0,stimulus,Other: I can only hear the background noise there is no speech,9,6689dc16b1244e1c84767b3f9160fc7f,1,6689dc16b1244e1c84767b3f9160fc7f
+-1,self,Other: Couldn't hear voice over noise,50,df6639951d5e4699b68e15ea2c4e7179,-1,df6639951d5e4699b68e15ea2c4e7179
+1,stimulus,Contains speech errors,20,a909f87b46d046b7be2248dd079de8b0,0,a909f87b46d046b7be2248dd079de8b0
+0,self,Other: garbled last word,12,0a48fab0eb464425925af90a3af13f56,21,0a48fab0eb464425925af90a3af13f56
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,25,5b256375d5dd4c3ea71dae5e8b869f66,3,5b256375d5dd4c3ea71dae5e8b869f66
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,39,55a4eb8c5a6448eda8211f5c152d3eb2,18,55a4eb8c5a6448eda8211f5c152d3eb2
+0,stimulus,Other: Cannot understand over background noise. ,27,55a4eb8c5a6448eda8211f5c152d3eb2,12,55a4eb8c5a6448eda8211f5c152d3eb2
+0,stimulus,"Other: Can't hear it to well, to much background. ",28,55a4eb8c5a6448eda8211f5c152d3eb2,10,55a4eb8c5a6448eda8211f5c152d3eb2
+-1,self,Speech stops or starts abruptly / speech sounds cut off,40,55a4eb8c5a6448eda8211f5c152d3eb2,-1,55a4eb8c5a6448eda8211f5c152d3eb2
+0,self,Other: Could not understand any words said,37,430102e627cc4784aa292c00f47bc3e2,21,430102e627cc4784aa292c00f47bc3e2
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,27,9a1a22b490464c5691cf29bb8e8f038f,1,9a1a22b490464c5691cf29bb8e8f038f
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,14,9a1a22b490464c5691cf29bb8e8f038f,0,9a1a22b490464c5691cf29bb8e8f038f
+-1,self,Other: Static,50,d650d794d3ee4e4fa322732a97975f95,-1,d650d794d3ee4e4fa322732a97975f95
+0,self,Contains speech errors,29,08110d966cb641a6b39aae198a743ac9,21,08110d966cb641a6b39aae198a743ac9
+0,stimulus,Contains speech errors,10,6c1251afba63431e8e8c71ce31c152de,9,6c1251afba63431e8e8c71ce31c152de
+0,stimulus,Other: very low speech compared to background noise,38,6c1251afba63431e8e8c71ce31c152de,26,6c1251afba63431e8e8c71ce31c152de
+0,stimulus,Contains speech errors,22,6c1251afba63431e8e8c71ce31c152de,19,6c1251afba63431e8e8c71ce31c152de
+-1,self,Contains speech errors,42,6c1251afba63431e8e8c71ce31c152de,-1,6c1251afba63431e8e8c71ce31c152de
+-1,self,Contains speech errors,40,6c1251afba63431e8e8c71ce31c152de,-1,6c1251afba63431e8e8c71ce31c152de
+0,stimulus,Other: background noise,0,6c1251afba63431e8e8c71ce31c152de,17,6c1251afba63431e8e8c71ce31c152de
+0,stimulus,Contains speech errors,25,fed1958860214d92b75ea9d7a2c6fcbf,1,fed1958860214d92b75ea9d7a2c6fcbf
+0,stimulus,Contains speech errors,12,fed1958860214d92b75ea9d7a2c6fcbf,2,fed1958860214d92b75ea9d7a2c6fcbf
+0,self,Speech stops or starts abruptly / speech sounds cut off,15,fed1958860214d92b75ea9d7a2c6fcbf,2,fed1958860214d92b75ea9d7a2c6fcbf
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,16,fed1958860214d92b75ea9d7a2c6fcbf,1,fed1958860214d92b75ea9d7a2c6fcbf
+1,stimulus,Speech stops or starts abruptly / speech sounds cut off,19,fed1958860214d92b75ea9d7a2c6fcbf,0,fed1958860214d92b75ea9d7a2c6fcbf
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,30,fed1958860214d92b75ea9d7a2c6fcbf,1,fed1958860214d92b75ea9d7a2c6fcbf
+0,self,Speech stops or starts abruptly / speech sounds cut off,29,fed1958860214d92b75ea9d7a2c6fcbf,1,fed1958860214d92b75ea9d7a2c6fcbf
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,34,fed1958860214d92b75ea9d7a2c6fcbf,1,fed1958860214d92b75ea9d7a2c6fcbf
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,1,fed1958860214d92b75ea9d7a2c6fcbf,2,fed1958860214d92b75ea9d7a2c6fcbf
+0,stimulus,Contains speech errors,3,fed1958860214d92b75ea9d7a2c6fcbf,1,fed1958860214d92b75ea9d7a2c6fcbf
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,4,fed1958860214d92b75ea9d7a2c6fcbf,1,fed1958860214d92b75ea9d7a2c6fcbf
+0,stimulus,Contains speech errors,7,fed1958860214d92b75ea9d7a2c6fcbf,1,fed1958860214d92b75ea9d7a2c6fcbf
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,6,fed1958860214d92b75ea9d7a2c6fcbf,0,fed1958860214d92b75ea9d7a2c6fcbf
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,20,fed1958860214d92b75ea9d7a2c6fcbf,1,fed1958860214d92b75ea9d7a2c6fcbf
+-1,self,Contains speech errors,50,fed1958860214d92b75ea9d7a2c6fcbf,-1,fed1958860214d92b75ea9d7a2c6fcbf
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,32,0898fb71e8ce4b5f97780312c2679f30,15,0898fb71e8ce4b5f97780312c2679f30
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,31,0898fb71e8ce4b5f97780312c2679f30,21,0898fb71e8ce4b5f97780312c2679f30
+0,stimulus,Contains speech errors,36,0898fb71e8ce4b5f97780312c2679f30,12,0898fb71e8ce4b5f97780312c2679f30
+0,stimulus,Other: incoherent. ,1,0898fb71e8ce4b5f97780312c2679f30,13,0898fb71e8ce4b5f97780312c2679f30
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,7,0898fb71e8ce4b5f97780312c2679f30,14,0898fb71e8ce4b5f97780312c2679f30
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,6,0898fb71e8ce4b5f97780312c2679f30,5,0898fb71e8ce4b5f97780312c2679f30
+0,self,Other: I could not hear or understand any speech in the recording,22,c73f2701212344a89eab5bc39042c2e6,2,c73f2701212344a89eab5bc39042c2e6
+0,self,Other: Didn't understand anything the person was saying,10,dc02e8bc38234eed94e4e0cfbe083801,5,dc02e8bc38234eed94e4e0cfbe083801
+0,self,Other: Didn't understand anything the person said,20,dc02e8bc38234eed94e4e0cfbe083801,4,dc02e8bc38234eed94e4e0cfbe083801
+0,self,Other: Didn't understand anything the person said,25,dc02e8bc38234eed94e4e0cfbe083801,7,dc02e8bc38234eed94e4e0cfbe083801
+0,self,Other: Didn't understand anything in the audio,28,dc02e8bc38234eed94e4e0cfbe083801,7,dc02e8bc38234eed94e4e0cfbe083801
+0,self,Speech stops or starts abruptly / speech sounds cut off,34,dc02e8bc38234eed94e4e0cfbe083801,6,dc02e8bc38234eed94e4e0cfbe083801
+0,self,"Other: couldn't understand other person completely, stopped talking when I couldn't figure out what else to say",3,dc02e8bc38234eed94e4e0cfbe083801,6,dc02e8bc38234eed94e4e0cfbe083801
+0,self,Other: Didn't understand anything in the previous audio,9,dc02e8bc38234eed94e4e0cfbe083801,6,dc02e8bc38234eed94e4e0cfbe083801
+0,self,Other: heard or understood nothing,9,3418530188874362906071bff7b82f88,1,3418530188874362906071bff7b82f88
+0,self,Other: made a mistake,32,3418530188874362906071bff7b82f88,0,3418530188874362906071bff7b82f88
+0,self,"Other: misclicked no, should have been yes, need to make it so you can change your answer",5,3418530188874362906071bff7b82f88,0,3418530188874362906071bff7b82f88
+0,self,Other: heard or understood nothing,21,3418530188874362906071bff7b82f88,1,3418530188874362906071bff7b82f88
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,24,69015a59a381422e9d3e2d1998583096,14,69015a59a381422e9d3e2d1998583096
+0,stimulus,Other: too fast,10,69015a59a381422e9d3e2d1998583096,3,69015a59a381422e9d3e2d1998583096
+0,stimulus,Other: spoke to low,13,69015a59a381422e9d3e2d1998583096,10,69015a59a381422e9d3e2d1998583096
+0,stimulus,Other: spoke to low and fast,27,69015a59a381422e9d3e2d1998583096,11,69015a59a381422e9d3e2d1998583096
+1,stimulus,Speech stops or starts abruptly / speech sounds cut off,20,69015a59a381422e9d3e2d1998583096,1,69015a59a381422e9d3e2d1998583096
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,21,69015a59a381422e9d3e2d1998583096,16,69015a59a381422e9d3e2d1998583096
+0,stimulus,Other: too low,32,69015a59a381422e9d3e2d1998583096,14,69015a59a381422e9d3e2d1998583096
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,31,69015a59a381422e9d3e2d1998583096,18,69015a59a381422e9d3e2d1998583096
+0,stimulus,Other: spoke way to low,29,69015a59a381422e9d3e2d1998583096,11,69015a59a381422e9d3e2d1998583096
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,36,69015a59a381422e9d3e2d1998583096,9,69015a59a381422e9d3e2d1998583096
+0,stimulus,Other: spoke to low,0,69015a59a381422e9d3e2d1998583096,9,69015a59a381422e9d3e2d1998583096
+0,stimulus,Other: spoke to low to hear it,3,69015a59a381422e9d3e2d1998583096,11,69015a59a381422e9d3e2d1998583096
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,7,69015a59a381422e9d3e2d1998583096,10,69015a59a381422e9d3e2d1998583096
+0,stimulus,Other: to low,8,69015a59a381422e9d3e2d1998583096,14,69015a59a381422e9d3e2d1998583096
+0,self,Other: I could not discern what was being said at all,20,0bc62c97629346f6a59ab5481c9b17d0,7,0bc62c97629346f6a59ab5481c9b17d0
+0,self,Contains speech errors,4,0bc62c97629346f6a59ab5481c9b17d0,14,0bc62c97629346f6a59ab5481c9b17d0
+0,stimulus,Other: Impossible to discern,22,0bc62c97629346f6a59ab5481c9b17d0,14,0bc62c97629346f6a59ab5481c9b17d0
+0,stimulus,Contains speech errors,24,a79de0dbbe7542d0ab5a7d1e95513ca9,23,a79de0dbbe7542d0ab5a7d1e95513ca9
+0,stimulus,Contains speech errors,18,a79de0dbbe7542d0ab5a7d1e95513ca9,32,a79de0dbbe7542d0ab5a7d1e95513ca9
+0,stimulus,Contains speech errors,36,a79de0dbbe7542d0ab5a7d1e95513ca9,17,a79de0dbbe7542d0ab5a7d1e95513ca9
+0,self,Other: I accidently clicked no sorry,16,a79de0dbbe7542d0ab5a7d1e95513ca9,17,a79de0dbbe7542d0ab5a7d1e95513ca9
+0,self,Other: missed the recording,33,57a0b6bf1a3347feac373b6b0dd60929,27,57a0b6bf1a3347feac373b6b0dd60929
+-1,self,Other: I missed the sentence,50,57a0b6bf1a3347feac373b6b0dd60929,-1,57a0b6bf1a3347feac373b6b0dd60929
+-1,self,Other: I cant remember what was said,47,e6a1fe3a6f7f4947934603a2e744c34e,-1,e6a1fe3a6f7f4947934603a2e744c34e
+0,stimulus,Other: Could not make out any words,1,fdd924e7c558447f991ee8ee1d22fd94,3,fdd924e7c558447f991ee8ee1d22fd94
+0,self,Other: Could not understand,16,fdd924e7c558447f991ee8ee1d22fd94,2,fdd924e7c558447f991ee8ee1d22fd94
+0,stimulus,Other: Not sure of last word spoken,39,46d30be1286e49c687780aaf9f8f9c87,29,46d30be1286e49c687780aaf9f8f9c87
+0,self,Contains speech errors,13,3e1624aa7b3841548f1aae1449ee578f,3,3e1624aa7b3841548f1aae1449ee578f
+0,self,Contains speech errors,12,3e1624aa7b3841548f1aae1449ee578f,5,3e1624aa7b3841548f1aae1449ee578f
+0,self,Contains speech errors,14,3e1624aa7b3841548f1aae1449ee578f,0,3e1624aa7b3841548f1aae1449ee578f
+1,self,Contains speech errors,31,3e1624aa7b3841548f1aae1449ee578f,0,3e1624aa7b3841548f1aae1449ee578f
+0,stimulus,Contains speech errors,34,3e1624aa7b3841548f1aae1449ee578f,5,3e1624aa7b3841548f1aae1449ee578f
+0,self,Contains speech errors,5,3e1624aa7b3841548f1aae1449ee578f,3,3e1624aa7b3841548f1aae1449ee578f
+0,self,Contains speech errors,32,895b45327b994e1e8da69cb47fade66e,0,895b45327b994e1e8da69cb47fade66e
+-1,self,Speech stops or starts abruptly / speech sounds cut off,49,895b45327b994e1e8da69cb47fade66e,-1,895b45327b994e1e8da69cb47fade66e
+0,self,Contains speech errors,11,5746ea9e6d9b45a5b186594e3d51b1cf,21,5746ea9e6d9b45a5b186594e3d51b1cf
+0,stimulus,Other: I forgot to click on stop recording,37,5746ea9e6d9b45a5b186594e3d51b1cf,22,5746ea9e6d9b45a5b186594e3d51b1cf
+0,self,Contains speech errors,16,5746ea9e6d9b45a5b186594e3d51b1cf,17,5746ea9e6d9b45a5b186594e3d51b1cf
+0,stimulus,Contains speech errors,33,cfd2091586984815987b9eae31ce432e,10,cfd2091586984815987b9eae31ce432e
+0,self,Other: loud slapping noises,0,cfd2091586984815987b9eae31ce432e,3,cfd2091586984815987b9eae31ce432e
+0,self,Other: Unclear,30,ebef186ca3e14a3d9265e89f525b812e,0,ebef186ca3e14a3d9265e89f525b812e
+0,self,Other: Hard to understand,17,ebef186ca3e14a3d9265e89f525b812e,0,ebef186ca3e14a3d9265e89f525b812e
+0,stimulus,Other: Could not understand any of it,23,ebef186ca3e14a3d9265e89f525b812e,1,ebef186ca3e14a3d9265e89f525b812e
+0,self,Contains speech errors,0,954f8363ece042e4948509057e5b93c9,3,954f8363ece042e4948509057e5b93c9
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,2,954f8363ece042e4948509057e5b93c9,3,954f8363ece042e4948509057e5b93c9
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,6,954f8363ece042e4948509057e5b93c9,0,954f8363ece042e4948509057e5b93c9
+0,stimulus,Other: cant understand any of it,7,954f8363ece042e4948509057e5b93c9,4,954f8363ece042e4948509057e5b93c9
+0,self,Other: it has a lot of static,9,954f8363ece042e4948509057e5b93c9,0,954f8363ece042e4948509057e5b93c9
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,11,954f8363ece042e4948509057e5b93c9,5,954f8363ece042e4948509057e5b93c9
+0,self,Other: blank,12,954f8363ece042e4948509057e5b93c9,5,954f8363ece042e4948509057e5b93c9
+1,self,Contains speech errors,13,954f8363ece042e4948509057e5b93c9,1,954f8363ece042e4948509057e5b93c9
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,14,954f8363ece042e4948509057e5b93c9,0,954f8363ece042e4948509057e5b93c9
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,17,954f8363ece042e4948509057e5b93c9,2,954f8363ece042e4948509057e5b93c9
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,18,954f8363ece042e4948509057e5b93c9,6,954f8363ece042e4948509057e5b93c9
+1,stimulus,Other: it was drowned out,19,954f8363ece042e4948509057e5b93c9,0,954f8363ece042e4948509057e5b93c9
+1,stimulus,Speech stops or starts abruptly / speech sounds cut off,20,954f8363ece042e4948509057e5b93c9,0,954f8363ece042e4948509057e5b93c9
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,21,954f8363ece042e4948509057e5b93c9,6,954f8363ece042e4948509057e5b93c9
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,22,954f8363ece042e4948509057e5b93c9,4,954f8363ece042e4948509057e5b93c9
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,23,954f8363ece042e4948509057e5b93c9,6,954f8363ece042e4948509057e5b93c9
+0,stimulus,Other: made no sense it faded out ,24,954f8363ece042e4948509057e5b93c9,6,954f8363ece042e4948509057e5b93c9
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,25,954f8363ece042e4948509057e5b93c9,2,954f8363ece042e4948509057e5b93c9
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,26,954f8363ece042e4948509057e5b93c9,4,954f8363ece042e4948509057e5b93c9
+0,stimulus,Other: blank,27,954f8363ece042e4948509057e5b93c9,2,954f8363ece042e4948509057e5b93c9
+0,stimulus,Other: couldn't catch it,28,954f8363ece042e4948509057e5b93c9,5,954f8363ece042e4948509057e5b93c9
+1,stimulus,Speech stops or starts abruptly / speech sounds cut off,30,954f8363ece042e4948509057e5b93c9,0,954f8363ece042e4948509057e5b93c9
+0,self,Other: I think its blank by recording would not submit,32,954f8363ece042e4948509057e5b93c9,6,954f8363ece042e4948509057e5b93c9
+0,stimulus,Other: part of it was drowned out,34,954f8363ece042e4948509057e5b93c9,4,954f8363ece042e4948509057e5b93c9
+0,stimulus,Other: missed it completely,36,954f8363ece042e4948509057e5b93c9,6,954f8363ece042e4948509057e5b93c9
+0,self,Other: static ,38,954f8363ece042e4948509057e5b93c9,7,954f8363ece042e4948509057e5b93c9
+-1,self,Other: I recorded it and it said it was too long would not allow me to try again,48,954f8363ece042e4948509057e5b93c9,-1,954f8363ece042e4948509057e5b93c9
+-1,self,Other: too long and I could not re record it for some reason,49,954f8363ece042e4948509057e5b93c9,-1,954f8363ece042e4948509057e5b93c9
+0,self,Contains speech errors,27,e1f5fb8bc21048cb8a50771b80eda39a,12,e1f5fb8bc21048cb8a50771b80eda39a
+0,stimulus,Contains speech errors,22,e1f5fb8bc21048cb8a50771b80eda39a,12,e1f5fb8bc21048cb8a50771b80eda39a
+0,stimulus,Contains speech errors,23,e1f5fb8bc21048cb8a50771b80eda39a,14,e1f5fb8bc21048cb8a50771b80eda39a
+0,self,Other: I wasn't able to make out what was said.,38,c102400293ce46aa818d294ec1da8407,34,c102400293ce46aa818d294ec1da8407
+-1,self,Other: Missed it entirely.,50,c102400293ce46aa818d294ec1da8407,-1,c102400293ce46aa818d294ec1da8407
+-1,self,Contains speech errors,43,10079013e0174351ba1de4867b5742bf,-1,10079013e0174351ba1de4867b5742bf
+-1,self,Other: microphone cut out ,41,10079013e0174351ba1de4867b5742bf,-1,10079013e0174351ba1de4867b5742bf
+0,self,Speech stops or starts abruptly / speech sounds cut off,14,0d6833fda46d4975bd6bee66bdcaaef0,12,0d6833fda46d4975bd6bee66bdcaaef0
+0,self,Contains speech errors,24,a54957064ae24c43bf131c3ae4f21ed5,14,a54957064ae24c43bf131c3ae4f21ed5
+0,stimulus,Contains speech errors,10,a54957064ae24c43bf131c3ae4f21ed5,5,a54957064ae24c43bf131c3ae4f21ed5
+0,self,Contains speech errors,20,a54957064ae24c43bf131c3ae4f21ed5,6,a54957064ae24c43bf131c3ae4f21ed5
+0,self,Other: missed it,14,a54957064ae24c43bf131c3ae4f21ed5,8,a54957064ae24c43bf131c3ae4f21ed5
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,16,a54957064ae24c43bf131c3ae4f21ed5,12,a54957064ae24c43bf131c3ae4f21ed5
+0,self,Other: didn't hear,23,a54957064ae24c43bf131c3ae4f21ed5,12,a54957064ae24c43bf131c3ae4f21ed5
+0,stimulus,Other: Could not understand. ,0,e2e5cbe4a87f4981bdd9d403c758ab32,14,e2e5cbe4a87f4981bdd9d403c758ab32
+0,self,Other: No,20,d1c72cfdf11448a3ad5761f7c0561742,9,d1c72cfdf11448a3ad5761f7c0561742
+0,self,Contains speech errors,17,d1c72cfdf11448a3ad5761f7c0561742,15,d1c72cfdf11448a3ad5761f7c0561742
+0,self,"Other: I transcribed what I thought I heard, but it does not make sense",32,ecab791f55224e9c8390d70b3994c98c,19,ecab791f55224e9c8390d70b3994c98c
+0,stimulus,Other: I could not understand what he said,38,ecab791f55224e9c8390d70b3994c98c,27,ecab791f55224e9c8390d70b3994c98c
+0,self,Other: Couldn't understand,39,d2309e9d6bcc43cf9559553f83e0d299,25,d2309e9d6bcc43cf9559553f83e0d299
+0,stimulus,Other: couldn't understand any of it,12,d2309e9d6bcc43cf9559553f83e0d299,22,d2309e9d6bcc43cf9559553f83e0d299
+0,stimulus,Other: can't understand,28,d2309e9d6bcc43cf9559553f83e0d299,8,d2309e9d6bcc43cf9559553f83e0d299
+0,self,Other: tongue tied. stopped by accident and couldn't go back,37,d2309e9d6bcc43cf9559553f83e0d299,19,d2309e9d6bcc43cf9559553f83e0d299
+0,self,Other: I couldn't understand any of the words,29,d2309e9d6bcc43cf9559553f83e0d299,18,d2309e9d6bcc43cf9559553f83e0d299
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,36,d2309e9d6bcc43cf9559553f83e0d299,13,d2309e9d6bcc43cf9559553f83e0d299
+0,stimulus,Other: did not understand,27,23d740209a764a26a790843fa9a9c3bd,0,23d740209a764a26a790843fa9a9c3bd
+0,self,Other: couldnt understand,15,23d740209a764a26a790843fa9a9c3bd,3,23d740209a764a26a790843fa9a9c3bd
+0,self,Other: Could not understand it,14,23d740209a764a26a790843fa9a9c3bd,0,23d740209a764a26a790843fa9a9c3bd
+0,stimulus,Other: Can not understand the speech,16,23d740209a764a26a790843fa9a9c3bd,2,23d740209a764a26a790843fa9a9c3bd
+0,stimulus,Other: I can not hear any one talking.,18,23d740209a764a26a790843fa9a9c3bd,4,23d740209a764a26a790843fa9a9c3bd
+0,self,Other: could not understnad,1,23d740209a764a26a790843fa9a9c3bd,1,23d740209a764a26a790843fa9a9c3bd
+0,self,Contains speech errors,3,23d740209a764a26a790843fa9a9c3bd,2,23d740209a764a26a790843fa9a9c3bd
+0,stimulus,Other: I can not understand the speech,4,23d740209a764a26a790843fa9a9c3bd,2,23d740209a764a26a790843fa9a9c3bd
+0,self,Contains speech errors,7,23d740209a764a26a790843fa9a9c3bd,2,23d740209a764a26a790843fa9a9c3bd
+0,self,Contains speech errors,32,23d740209a764a26a790843fa9a9c3bd,2,23d740209a764a26a790843fa9a9c3bd
+0,stimulus,Other: I feel like i could not understand anything the speaker was saying,20,23d740209a764a26a790843fa9a9c3bd,3,23d740209a764a26a790843fa9a9c3bd
+0,stimulus,Other: I could only catch a few words of it.,11,5bcd571bb9b645bc92fe6a4a7d5cfb35,4,5bcd571bb9b645bc92fe6a4a7d5cfb35
+0,stimulus,Other: I could not really hear it,10,5bcd571bb9b645bc92fe6a4a7d5cfb35,4,5bcd571bb9b645bc92fe6a4a7d5cfb35
+0,stimulus,Other: I could only understand the first few words,26,5bcd571bb9b645bc92fe6a4a7d5cfb35,8,5bcd571bb9b645bc92fe6a4a7d5cfb35
+0,self,Contains speech errors,27,5bcd571bb9b645bc92fe6a4a7d5cfb35,5,5bcd571bb9b645bc92fe6a4a7d5cfb35
+0,stimulus,Other: i could not understand it,20,5bcd571bb9b645bc92fe6a4a7d5cfb35,5,5bcd571bb9b645bc92fe6a4a7d5cfb35
+0,stimulus,Other: I couldn't understand what he was saying,21,5bcd571bb9b645bc92fe6a4a7d5cfb35,9,5bcd571bb9b645bc92fe6a4a7d5cfb35
+0,stimulus,Other: I could not hear over the background noise,16,5bcd571bb9b645bc92fe6a4a7d5cfb35,9,5bcd571bb9b645bc92fe6a4a7d5cfb35
+0,stimulus,Other: I couldn't understand any of it,31,5bcd571bb9b645bc92fe6a4a7d5cfb35,10,5bcd571bb9b645bc92fe6a4a7d5cfb35
+0,stimulus,Other: I couldn't make it out,30,5bcd571bb9b645bc92fe6a4a7d5cfb35,8,5bcd571bb9b645bc92fe6a4a7d5cfb35
+0,stimulus,Other: I couldn't understand it,28,5bcd571bb9b645bc92fe6a4a7d5cfb35,6,5bcd571bb9b645bc92fe6a4a7d5cfb35
+0,self,Contains speech errors,1,5bcd571bb9b645bc92fe6a4a7d5cfb35,7,5bcd571bb9b645bc92fe6a4a7d5cfb35
+1,stimulus,Other: I could not understand it,3,5bcd571bb9b645bc92fe6a4a7d5cfb35,1,5bcd571bb9b645bc92fe6a4a7d5cfb35
+0,self,"Other: voice too muffled to understand, bg noise too loud",10,53edaed0aee2422e96af6c0d3d636962,6,53edaed0aee2422e96af6c0d3d636962
+0,self,Other: too muffled to understand,39,53edaed0aee2422e96af6c0d3d636962,18,53edaed0aee2422e96af6c0d3d636962
+0,self,"Other: like before - I hear a voice, but cannot make out the words, too much bg noise",27,53edaed0aee2422e96af6c0d3d636962,12,53edaed0aee2422e96af6c0d3d636962
+0,self,"Other: I heard a female voice, but too much noise to make out the words",21,53edaed0aee2422e96af6c0d3d636962,18,53edaed0aee2422e96af6c0d3d636962
+0,self,"Other: too much background interference, I could not understand at all",22,53edaed0aee2422e96af6c0d3d636962,11,53edaed0aee2422e96af6c0d3d636962
+0,self,"Other: voice was too quiet, I could not make out the words over the NOISE",32,53edaed0aee2422e96af6c0d3d636962,15,53edaed0aee2422e96af6c0d3d636962
+0,stimulus,Other: only understood the first few words,31,53edaed0aee2422e96af6c0d3d636962,19,53edaed0aee2422e96af6c0d3d636962
+0,stimulus,"Other: only understood the first few words, couldn't even guess at the rest, too muffled",35,53edaed0aee2422e96af6c0d3d636962,16,53edaed0aee2422e96af6c0d3d636962
+0,self,"Other: muffled, couldn't understand",34,53edaed0aee2422e96af6c0d3d636962,12,53edaed0aee2422e96af6c0d3d636962
+0,stimulus,Contains speech errors,27,aee7c62e17664d4291fbd50d6150c794,20,aee7c62e17664d4291fbd50d6150c794
+0,stimulus,Other: could not understand,4,aee7c62e17664d4291fbd50d6150c794,25,aee7c62e17664d4291fbd50d6150c794
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,14,aee7c62e17664d4291fbd50d6150c794,13,aee7c62e17664d4291fbd50d6150c794
+0,self,Other: couldn't hear what was said,8,1cefe57bd04e4664a111ec51ceda6dd4,25,1cefe57bd04e4664a111ec51ceda6dd4
+0,self,Other: There is popping,21,1cefe57bd04e4664a111ec51ceda6dd4,31,1cefe57bd04e4664a111ec51ceda6dd4
+0,self,Contains speech errors,25,1cefe57bd04e4664a111ec51ceda6dd4,13,1cefe57bd04e4664a111ec51ceda6dd4
+0,stimulus,Other: difficult to understand,10,8cf6535ea0ae4addb28f5f90a2b13a7d,2,8cf6535ea0ae4addb28f5f90a2b13a7d
+0,stimulus,Other: difficult to understand,12,8cf6535ea0ae4addb28f5f90a2b13a7d,3,8cf6535ea0ae4addb28f5f90a2b13a7d
+0,stimulus,Other: difficult to understand,20,8cf6535ea0ae4addb28f5f90a2b13a7d,2,8cf6535ea0ae4addb28f5f90a2b13a7d
+0,stimulus,Other: difficult to understand,28,8cf6535ea0ae4addb28f5f90a2b13a7d,2,8cf6535ea0ae4addb28f5f90a2b13a7d
+0,stimulus,Other: completely inaudible.,37,f8d2e4d4a8c044d086aa34930d047205,4,f8d2e4d4a8c044d086aa34930d047205
+0,self,Other: Cannot understand any words in this segment,24,35858264868b49228a1b1ad4c9704a32,14,35858264868b49228a1b1ad4c9704a32
+0,self,Speech stops or starts abruptly / speech sounds cut off,10,35858264868b49228a1b1ad4c9704a32,3,35858264868b49228a1b1ad4c9704a32
+0,self,Other: Can't understand any words being said,39,35858264868b49228a1b1ad4c9704a32,18,35858264868b49228a1b1ad4c9704a32
+0,self,Other: Can't understand any words,18,35858264868b49228a1b1ad4c9704a32,15,35858264868b49228a1b1ad4c9704a32
+0,self,Other: Did not understand any words,36,35858264868b49228a1b1ad4c9704a32,9,35858264868b49228a1b1ad4c9704a32
+0,self,Other: Can't understand any words being said,3,35858264868b49228a1b1ad4c9704a32,11,35858264868b49228a1b1ad4c9704a32
+0,self,Other: Can't understand any words being said,2,35858264868b49228a1b1ad4c9704a32,10,35858264868b49228a1b1ad4c9704a32
+0,self,Other: Can't understand any words being said,4,35858264868b49228a1b1ad4c9704a32,11,35858264868b49228a1b1ad4c9704a32
+0,self,Other: Cannot understand any words in this segment.,32,35858264868b49228a1b1ad4c9704a32,14,35858264868b49228a1b1ad4c9704a32
+0,self,Other: Can't understand any words being said,8,35858264868b49228a1b1ad4c9704a32,14,35858264868b49228a1b1ad4c9704a32
+0,stimulus,Other: could not understand 2nd half of sentence,0,87dd6ccbaea949689ab5461061bfbb4a,13,87dd6ccbaea949689ab5461061bfbb4a
+0,self,"Other: could not understand, too much noise",36,87dd6ccbaea949689ab5461061bfbb4a,14,87dd6ccbaea949689ab5461061bfbb4a
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,34,87dd6ccbaea949689ab5461061bfbb4a,17,87dd6ccbaea949689ab5461061bfbb4a
+0,self,Other: I couldn't make out a single word,33,a575811edc0841b082724370f678d574,21,a575811edc0841b082724370f678d574
+0,self,Other: could not make out any of the words said,6,a575811edc0841b082724370f678d574,4,a575811edc0841b082724370f678d574
+0,self,Other: could not make out a single word,36,a575811edc0841b082724370f678d574,12,a575811edc0841b082724370f678d574
+0,self,Other: could not make out anything said,21,a575811edc0841b082724370f678d574,19,a575811edc0841b082724370f678d574
+0,self,Other: can't understand because it sounds like mumbling,10,49faa5f32cca4f248a9024990304d41b,8,49faa5f32cca4f248a9024990304d41b
+0,self,Other: cant understand what is being said,13,49faa5f32cca4f248a9024990304d41b,20,49faa5f32cca4f248a9024990304d41b
+0,self,Other: couldn't make out,16,49faa5f32cca4f248a9024990304d41b,17,49faa5f32cca4f248a9024990304d41b
+0,self,Other: I have no idea what was said,18,49faa5f32cca4f248a9024990304d41b,27,49faa5f32cca4f248a9024990304d41b
+0,self,Other: couldn't understand,28,49faa5f32cca4f248a9024990304d41b,12,49faa5f32cca4f248a9024990304d41b
+-1,self,Other: i couldn't understand what he said,50,49faa5f32cca4f248a9024990304d41b,-1,49faa5f32cca4f248a9024990304d41b
+0,self,Other: couldn't make it out,34,49faa5f32cca4f248a9024990304d41b,16,49faa5f32cca4f248a9024990304d41b
+0,self,Other: couldn't understand her,0,49faa5f32cca4f248a9024990304d41b,16,49faa5f32cca4f248a9024990304d41b
+0,self,Other: couldn't understand him ,37,49faa5f32cca4f248a9024990304d41b,21,49faa5f32cca4f248a9024990304d41b
+0,self,Other: couldn't understand,6,49faa5f32cca4f248a9024990304d41b,9,49faa5f32cca4f248a9024990304d41b
+0,self,Other: couldnt make out what was spoken,9,49faa5f32cca4f248a9024990304d41b,18,49faa5f32cca4f248a9024990304d41b
+0,stimulus,Contains speech errors,8,49faa5f32cca4f248a9024990304d41b,24,49faa5f32cca4f248a9024990304d41b
+0,stimulus,Other: could not hear,10,235d5bd19f0340edb67a0a55d34a3936,12,235d5bd19f0340edb67a0a55d34a3936
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,13,235d5bd19f0340edb67a0a55d34a3936,24,235d5bd19f0340edb67a0a55d34a3936
+0,stimulus,Other: could not hear the words,25,235d5bd19f0340edb67a0a55d34a3936,12,235d5bd19f0340edb67a0a55d34a3936
+0,self,Contains speech errors,19,235d5bd19f0340edb67a0a55d34a3936,30,235d5bd19f0340edb67a0a55d34a3936
+0,self,Other: could not hear the speech over the background noise,28,235d5bd19f0340edb67a0a55d34a3936,13,235d5bd19f0340edb67a0a55d34a3936
+0,stimulus,Other: not intelligable,31,235d5bd19f0340edb67a0a55d34a3936,28,235d5bd19f0340edb67a0a55d34a3936
+0,stimulus,Other: meant to flag recording for background noise.,37,235d5bd19f0340edb67a0a55d34a3936,23,235d5bd19f0340edb67a0a55d34a3936
+0,stimulus,Other: could not hear audio,33,235d5bd19f0340edb67a0a55d34a3936,31,235d5bd19f0340edb67a0a55d34a3936
+0,stimulus,"Other: inaudible..too low, too much noise",28,369e2ea6558b4aa989bf952df83e9558,12,369e2ea6558b4aa989bf952df83e9558
+0,stimulus,Other: Muffled speech.,28,6abfc73e24bd4c98b483aded1a322b79,11,6abfc73e24bd4c98b483aded1a322b79
+0,stimulus,"Other: Could not understand what was said, speaker voice was too late in relationship to background noise. ",37,6abfc73e24bd4c98b483aded1a322b79,15,6abfc73e24bd4c98b483aded1a322b79
+-1,self,Other: no audio,41,ce0d27d270794287871d9189d93e23eb,-1,ce0d27d270794287871d9189d93e23eb
+-1,self,"Other: Received multiple errors of recording too long, try again, then not able to continue trying.",41,e583efdd2abf476696175cadaaddb655,-1,e583efdd2abf476696175cadaaddb655
+0,self,Other: Could not hear at all,1,c4cd70fcea564670a99b80001e5aa217,3,c4cd70fcea564670a99b80001e5aa217
+0,self,Contains speech errors,5,c4cd70fcea564670a99b80001e5aa217,0,c4cd70fcea564670a99b80001e5aa217
+0,stimulus,Other: unclear,20,0c1943c891fa4f7185d3752ff39c1c19,8,0c1943c891fa4f7185d3752ff39c1c19
+0,self,Other: couldn't hear it ,39,7e192c8489264a8c9c6dfbb10c9334ae,18,7e192c8489264a8c9c6dfbb10c9334ae
+0,stimulus,Other,5,c9d1ee75f6dd4c25ba68516ffec8e19f,20,c9d1ee75f6dd4c25ba68516ffec8e19f
+-1,self,Contains speech errors,50,c9d1ee75f6dd4c25ba68516ffec8e19f,-1,c9d1ee75f6dd4c25ba68516ffec8e19f
+0,self,Speech stops or starts abruptly / speech sounds cut off,9,9c5b93032ff54ea7aa4f2b30a87eb5f6,3,9c5b93032ff54ea7aa4f2b30a87eb5f6
+0,self,Contains speech errors,38,9c5b93032ff54ea7aa4f2b30a87eb5f6,8,9c5b93032ff54ea7aa4f2b30a87eb5f6
+0,self,Speech stops or starts abruptly / speech sounds cut off,36,9c5b93032ff54ea7aa4f2b30a87eb5f6,5,9c5b93032ff54ea7aa4f2b30a87eb5f6
+0,self,Other: inaudibale,0,6eb44520ca044c208f9f5b1bc4771ee8,6,6eb44520ca044c208f9f5b1bc4771ee8
+0,self,Other: inaudible,1,6eb44520ca044c208f9f5b1bc4771ee8,8,6eb44520ca044c208f9f5b1bc4771ee8
+0,self,Other: inaudible,2,6eb44520ca044c208f9f5b1bc4771ee8,6,6eb44520ca044c208f9f5b1bc4771ee8
+0,self,Other: inaudible,3,6eb44520ca044c208f9f5b1bc4771ee8,6,6eb44520ca044c208f9f5b1bc4771ee8
+0,self,Other: inaudible,6,6eb44520ca044c208f9f5b1bc4771ee8,4,6eb44520ca044c208f9f5b1bc4771ee8
+0,self,Other: inaudible,8,6eb44520ca044c208f9f5b1bc4771ee8,10,6eb44520ca044c208f9f5b1bc4771ee8
+0,self,Other: inaudible,9,6eb44520ca044c208f9f5b1bc4771ee8,6,6eb44520ca044c208f9f5b1bc4771ee8
+0,self,Other: inaudible,10,6eb44520ca044c208f9f5b1bc4771ee8,5,6eb44520ca044c208f9f5b1bc4771ee8
+0,self,Contains speech errors,11,6eb44520ca044c208f9f5b1bc4771ee8,8,6eb44520ca044c208f9f5b1bc4771ee8
+0,self,Other: inaudible,12,6eb44520ca044c208f9f5b1bc4771ee8,11,6eb44520ca044c208f9f5b1bc4771ee8
+0,self,Other: inaudible,13,6eb44520ca044c208f9f5b1bc4771ee8,7,6eb44520ca044c208f9f5b1bc4771ee8
+0,self,Contains speech errors,15,6eb44520ca044c208f9f5b1bc4771ee8,4,6eb44520ca044c208f9f5b1bc4771ee8
+0,self,Other: inaudible,16,6eb44520ca044c208f9f5b1bc4771ee8,8,6eb44520ca044c208f9f5b1bc4771ee8
+0,self,Other: inaudible,18,6eb44520ca044c208f9f5b1bc4771ee8,10,6eb44520ca044c208f9f5b1bc4771ee8
+0,self,Other: inaudible,20,6eb44520ca044c208f9f5b1bc4771ee8,4,6eb44520ca044c208f9f5b1bc4771ee8
+0,self,Other: inaudible,21,6eb44520ca044c208f9f5b1bc4771ee8,11,6eb44520ca044c208f9f5b1bc4771ee8
+0,self,Other: inaudible,22,6eb44520ca044c208f9f5b1bc4771ee8,7,6eb44520ca044c208f9f5b1bc4771ee8
+0,self,Contains speech errors,24,6eb44520ca044c208f9f5b1bc4771ee8,13,6eb44520ca044c208f9f5b1bc4771ee8
+0,self,Other: inaudible,25,6eb44520ca044c208f9f5b1bc4771ee8,7,6eb44520ca044c208f9f5b1bc4771ee8
+0,self,Other,28,6eb44520ca044c208f9f5b1bc4771ee8,8,6eb44520ca044c208f9f5b1bc4771ee8
+0,self,Other: inaudible,30,6eb44520ca044c208f9f5b1bc4771ee8,7,6eb44520ca044c208f9f5b1bc4771ee8
+0,self,Other: inaudible,32,6eb44520ca044c208f9f5b1bc4771ee8,10,6eb44520ca044c208f9f5b1bc4771ee8
+0,self,Other: inaudible,33,6eb44520ca044c208f9f5b1bc4771ee8,14,6eb44520ca044c208f9f5b1bc4771ee8
+1,self,Other: inaudible,34,6eb44520ca044c208f9f5b1bc4771ee8,1,6eb44520ca044c208f9f5b1bc4771ee8
+0,self,Other: inaudiuble,35,6eb44520ca044c208f9f5b1bc4771ee8,12,6eb44520ca044c208f9f5b1bc4771ee8
+0,self,Other: did not hear ,36,6eb44520ca044c208f9f5b1bc4771ee8,5,6eb44520ca044c208f9f5b1bc4771ee8
+0,self,Other: inaudible,38,6eb44520ca044c208f9f5b1bc4771ee8,14,6eb44520ca044c208f9f5b1bc4771ee8
+-1,self,Contains speech errors,45,6eb44520ca044c208f9f5b1bc4771ee8,-1,6eb44520ca044c208f9f5b1bc4771ee8
+-1,self,Contains speech errors,50,6eb44520ca044c208f9f5b1bc4771ee8,-1,6eb44520ca044c208f9f5b1bc4771ee8
+0,self,"Other: too much noise, could not understand",20,6af9802ccc1441b5858ac8427da120de,4,6af9802ccc1441b5858ac8427da120de
+0,self,Other: could not hear any distinct words,28,6af9802ccc1441b5858ac8427da120de,14,6af9802ccc1441b5858ac8427da120de
+-1,self,Other: I missed it. I thought I was going to do a microphone test.,50,6af9802ccc1441b5858ac8427da120de,-1,6af9802ccc1441b5858ac8427da120de
+0,self,"Other: could not understand anything, too much noise",7,6af9802ccc1441b5858ac8427da120de,27,6af9802ccc1441b5858ac8427da120de
+0,self,Other: I only heard mumbles,9,6af9802ccc1441b5858ac8427da120de,23,6af9802ccc1441b5858ac8427da120de
+0,self,Other: I could not understand anything I heard,15,6af9802ccc1441b5858ac8427da120de,17,6af9802ccc1441b5858ac8427da120de
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,13,3f31c071fa0c4a738ea61c7079f28d5f,3,3f31c071fa0c4a738ea61c7079f28d5f
+-1,self,Speech stops or starts abruptly / speech sounds cut off,48,3f31c071fa0c4a738ea61c7079f28d5f,-1,3f31c071fa0c4a738ea61c7079f28d5f
+0,stimulus,Contains speech errors,9,edb850d5f65e40b7aca9cf14da4fd06b,2,edb850d5f65e40b7aca9cf14da4fd06b
+0,stimulus,Contains speech errors,25,edb850d5f65e40b7aca9cf14da4fd06b,4,edb850d5f65e40b7aca9cf14da4fd06b
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,33,edb850d5f65e40b7aca9cf14da4fd06b,7,edb850d5f65e40b7aca9cf14da4fd06b
+0,self,Contains speech errors,7,edb850d5f65e40b7aca9cf14da4fd06b,2,edb850d5f65e40b7aca9cf14da4fd06b
+1,stimulus,Contains speech errors,32,edb850d5f65e40b7aca9cf14da4fd06b,1,edb850d5f65e40b7aca9cf14da4fd06b
+0,stimulus,Other: Last part drowned out.,0,da598509bb3140bda6e15e97a0736c22,1,da598509bb3140bda6e15e97a0736c22
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,2,da598509bb3140bda6e15e97a0736c22,1,da598509bb3140bda6e15e97a0736c22
+0,stimulus,Other: Drowned out.,5,da598509bb3140bda6e15e97a0736c22,0,da598509bb3140bda6e15e97a0736c22
+0,stimulus,Other: Drowned out in the middle.,6,da598509bb3140bda6e15e97a0736c22,0,da598509bb3140bda6e15e97a0736c22
+0,self,Contains speech errors,7,da598509bb3140bda6e15e97a0736c22,0,da598509bb3140bda6e15e97a0736c22
+0,stimulus,Other: Can not understand parts.,8,da598509bb3140bda6e15e97a0736c22,1,da598509bb3140bda6e15e97a0736c22
+0,self,Speech stops or starts abruptly / speech sounds cut off,9,da598509bb3140bda6e15e97a0736c22,0,da598509bb3140bda6e15e97a0736c22
+0,stimulus,Other: Drowned out by others.,13,da598509bb3140bda6e15e97a0736c22,2,da598509bb3140bda6e15e97a0736c22
+0,stimulus,Other: Can not understsnd some things said,14,da598509bb3140bda6e15e97a0736c22,0,da598509bb3140bda6e15e97a0736c22
+0,stimulus,Other: Drowned out by others.,15,da598509bb3140bda6e15e97a0736c22,2,da598509bb3140bda6e15e97a0736c22
+0,stimulus,Other: drowned out at the end.,17,da598509bb3140bda6e15e97a0736c22,0,da598509bb3140bda6e15e97a0736c22
+0,stimulus,Other: Drowned out.,19,da598509bb3140bda6e15e97a0736c22,0,da598509bb3140bda6e15e97a0736c22
+0,stimulus,Other: Talked over.,20,da598509bb3140bda6e15e97a0736c22,0,da598509bb3140bda6e15e97a0736c22
+0,stimulus,Other: Drowned out.,21,da598509bb3140bda6e15e97a0736c22,1,da598509bb3140bda6e15e97a0736c22
+1,stimulus,Other: Drowned out.,23,da598509bb3140bda6e15e97a0736c22,0,da598509bb3140bda6e15e97a0736c22
+0,stimulus,Other: Drowned out by others.,24,da598509bb3140bda6e15e97a0736c22,1,da598509bb3140bda6e15e97a0736c22
+1,stimulus,Other: Others too loud.,25,da598509bb3140bda6e15e97a0736c22,0,da598509bb3140bda6e15e97a0736c22
+0,self,Contains speech errors,27,da598509bb3140bda6e15e97a0736c22,1,da598509bb3140bda6e15e97a0736c22
+0,stimulus,Other: Drowned out by female voices.,29,da598509bb3140bda6e15e97a0736c22,2,da598509bb3140bda6e15e97a0736c22
+0,stimulus,Contains speech errors,30,da598509bb3140bda6e15e97a0736c22,0,da598509bb3140bda6e15e97a0736c22
+0,stimulus,Other: Talked over.,31,da598509bb3140bda6e15e97a0736c22,2,da598509bb3140bda6e15e97a0736c22
+0,stimulus,Other: I forgot some of it.,32,da598509bb3140bda6e15e97a0736c22,0,da598509bb3140bda6e15e97a0736c22
+0,stimulus,Other: Drowned out in the middle.,33,da598509bb3140bda6e15e97a0736c22,2,da598509bb3140bda6e15e97a0736c22
+0,self,Speech stops or starts abruptly / speech sounds cut off,34,da598509bb3140bda6e15e97a0736c22,0,da598509bb3140bda6e15e97a0736c22
+0,stimulus,Other: Drowned out by others,35,da598509bb3140bda6e15e97a0736c22,2,da598509bb3140bda6e15e97a0736c22
+0,stimulus,Other: Talked over.,36,da598509bb3140bda6e15e97a0736c22,2,da598509bb3140bda6e15e97a0736c22
+0,stimulus,Other: Drowned out.,37,da598509bb3140bda6e15e97a0736c22,1,da598509bb3140bda6e15e97a0736c22
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,0,ff711e5a510d4242b7b070a599facaf4,22,ff711e5a510d4242b7b070a599facaf4
+0,stimulus,Other: Did she say past the 40 guard   is all I heard the voice say,4,ff711e5a510d4242b7b070a599facaf4,23,ff711e5a510d4242b7b070a599facaf4
+1,stimulus,Other: The team ends up breaking into ,5,ff711e5a510d4242b7b070a599facaf4,4,ff711e5a510d4242b7b070a599facaf4
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,6,ff711e5a510d4242b7b070a599facaf4,9,ff711e5a510d4242b7b070a599facaf4
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,7,ff711e5a510d4242b7b070a599facaf4,25,ff711e5a510d4242b7b070a599facaf4
+0,stimulus,Other: said   coming never ,8,ff711e5a510d4242b7b070a599facaf4,27,ff711e5a510d4242b7b070a599facaf4
+0,stimulus,Contains speech errors,9,ff711e5a510d4242b7b070a599facaf4,22,ff711e5a510d4242b7b070a599facaf4
+0,stimulus,Other: said    did she not notice   after that I didn't hear,11,ff711e5a510d4242b7b070a599facaf4,23,ff711e5a510d4242b7b070a599facaf4
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,12,ff711e5a510d4242b7b070a599facaf4,32,ff711e5a510d4242b7b070a599facaf4
+0,stimulus,Other: voice smothered by background noise,14,ff711e5a510d4242b7b070a599facaf4,12,ff711e5a510d4242b7b070a599facaf4
+0,stimulus,Contains speech errors,15,ff711e5a510d4242b7b070a599facaf4,16,ff711e5a510d4242b7b070a599facaf4
+0,stimulus,Other: only heard 5 words    the articles that make up,16,ff711e5a510d4242b7b070a599facaf4,19,ff711e5a510d4242b7b070a599facaf4
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,17,ff711e5a510d4242b7b070a599facaf4,17,ff711e5a510d4242b7b070a599facaf4
+0,stimulus,Contains speech errors,18,ff711e5a510d4242b7b070a599facaf4,33,ff711e5a510d4242b7b070a599facaf4
+0,stimulus,Other: do you have a good thing ,19,ff711e5a510d4242b7b070a599facaf4,31,ff711e5a510d4242b7b070a599facaf4
+0,stimulus,Contains speech errors,20,ff711e5a510d4242b7b070a599facaf4,7,ff711e5a510d4242b7b070a599facaf4
+0,stimulus,Other: says       still within the opera,21,ff711e5a510d4242b7b070a599facaf4,32,ff711e5a510d4242b7b070a599facaf4
+0,stimulus,Other: too much background noise,22,ff711e5a510d4242b7b070a599facaf4,28,ff711e5a510d4242b7b070a599facaf4
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,23,ff711e5a510d4242b7b070a599facaf4,25,ff711e5a510d4242b7b070a599facaf4
+0,stimulus,Other: he says     i am well,24,ff711e5a510d4242b7b070a599facaf4,25,ff711e5a510d4242b7b070a599facaf4
+0,stimulus,Other: all i heard was         failure to,25,ff711e5a510d4242b7b070a599facaf4,9,ff711e5a510d4242b7b070a599facaf4
+1,stimulus,Other: voice smothered by background noise,26,ff711e5a510d4242b7b070a599facaf4,2,ff711e5a510d4242b7b070a599facaf4
+0,stimulus,Contains speech errors,27,ff711e5a510d4242b7b070a599facaf4,21,ff711e5a510d4242b7b070a599facaf4
+0,stimulus,Contains speech errors,28,ff711e5a510d4242b7b070a599facaf4,13,ff711e5a510d4242b7b070a599facaf4
+0,stimulus,Other: it is a lot harder than       that is all i heard,29,ff711e5a510d4242b7b070a599facaf4,28,ff711e5a510d4242b7b070a599facaf4
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,30,ff711e5a510d4242b7b070a599facaf4,25,ff711e5a510d4242b7b070a599facaf4
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,32,ff711e5a510d4242b7b070a599facaf4,22,ff711e5a510d4242b7b070a599facaf4
+0,stimulus,Contains speech errors,33,ff711e5a510d4242b7b070a599facaf4,30,ff711e5a510d4242b7b070a599facaf4
+0,stimulus,Other: only thing I heard      all these,34,ff711e5a510d4242b7b070a599facaf4,20,ff711e5a510d4242b7b070a599facaf4
+0,stimulus,Speech stops or starts abruptly / speech sounds cut off,35,ff711e5a510d4242b7b070a599facaf4,24,ff711e5a510d4242b7b070a599facaf4
+0,stimulus,Other: All I heard was  contracts ,36,ff711e5a510d4242b7b070a599facaf4,18,ff711e5a510d4242b7b070a599facaf4
+0,stimulus,Other: so much background noise and voice was too soft,37,ff711e5a510d4242b7b070a599facaf4,19,ff711e5a510d4242b7b070a599facaf4
+-1,self,Other: I needed to hear it again and wasn't sure how to.,41,ff711e5a510d4242b7b070a599facaf4,-1,ff711e5a510d4242b7b070a599facaf4
+-1,stimulus,Other: It said  he was scared and just took off down the street,46,ff711e5a510d4242b7b070a599facaf4,-1,ff711e5a510d4242b7b070a599facaf4
+-1,stimulus,Speech stops or starts abruptly / speech sounds cut off,48,ff711e5a510d4242b7b070a599facaf4,-1,ff711e5a510d4242b7b070a599facaf4
+-1,stimulus,Contains speech errors,50,ff711e5a510d4242b7b070a599facaf4,-1,ff711e5a510d4242b7b070a599facaf4
+-1,self,Speech stops or starts abruptly / speech sounds cut off,46,b3f87b4239e44a94ac35f601d2c306df,-1,b3f87b4239e44a94ac35f601d2c306df
