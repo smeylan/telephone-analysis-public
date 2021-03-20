@@ -30,7 +30,7 @@ def get_sentence_prefixes(raw_sentence, tokenizer):
         prefixes.append(this_prefix)
         next_words.append(this_next_word)
         
-    return prefixes, next_words 
+    return prefixes, torch.Tensor(next_words) 
  
 def get_gpt2_sentence_score(sentence, tokenizer, model):
     """
@@ -43,24 +43,10 @@ def get_gpt2_sentence_score(sentence, tokenizer, model):
     
     this_prefixes, this_ground_truth_tokens = get_sentence_prefixes(sentence, tokenizer)
     this_next_word_probs = get_next_word_probs(this_prefixes, tokenizer, model)
-    this_softmax_targets = get_next_word_surprisal(this_next_word_probs, this_ground_truth_tokens, tokenizer)
+    this_surprisal_targets = new_model_funcs.get_next_word_surprisal(this_next_word_probs, this_ground_truth_tokens)
     
-    this_sum_score = torch.sum(this_softmax_targets).item() # This will be averaged in the main ipynb analysis.
+    this_sum_score = torch.sum(this_surprisal_targets).item() # This will be averaged in the main ipynb analysis.
     return this_sum_score
-
-def get_next_word_surprisal(next_word_probs, ground_truth_tokens, tokenizer):
-    
-    target_word_tokens = torch.Tensor(ground_truth_tokens)
-    
-    # 2/27: https://github.com/huggingface/transformers/issues/3021
-    target_word_tokens = target_word_tokens.view(-1, 1).long()
-    # end code
-
-    # Gather/indexing from 2/27: https://github.com/huggingface/transformers/issues/3021
-    softmax_targets = torch.gather(next_word_probs, dim = 1, index = target_word_tokens).squeeze()
-    surprisals = -torch.log(softmax_targets)
-    
-    return surprisals
 
 
 # The below function was generally based on/taken from the following:
