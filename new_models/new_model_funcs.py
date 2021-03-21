@@ -16,11 +16,23 @@ def prepSentence(x):
     return(' '.join([remasked,'.']))
 
 
-def get_next_word_surprisal(next_word_probs, target_word_tokens):
+def get_next_word_probs(next_word_probs, target_word_tokens):
+    
+    """
+    Inputs:
+        next_word_probs, a (positions to predict, vocab size) Tensor
+            each row corresponds to the position to predict's softmax. 
+        target_word_tokens, a (positions to predict,) Tensor
+            each value is the ground truth word's token
+    Outputs:
+        probs, a (positions to predict,) Tensor of the probability
+            for each prefix with ground truth completion
+    """
+    
+    target_word_tokens = target_word_tokens.view(-1, 1).long()
     
     # Gather/indexing from 2/27: https://github.com/huggingface/transformers/issues/3021
     
-    softmax_targets = torch.gather(next_word_probs, dim = 1, index = target_word_tokens).squeeze()
-    surprisals = -torch.log(softmax_targets)
+    probs = torch.gather(next_word_probs, dim = 1, index = target_word_tokens).squeeze()
     
-    return surprisals
+    return probs

@@ -4,11 +4,8 @@ import pandas as pd
 from transformers import BertForMaskedLM, BertTokenizer
 import torch
 
-import new_model_funcs
-#from new_models.new_model_funcs import prepSentence (for running from the main ipynbs)
-
-import importlib
-importlib.reload(new_model_funcs)
+from new_models import new_model_funcs
+from new_models.new_model_funcs import prepSentence
 
 import torch.nn.functional as F
 
@@ -92,16 +89,13 @@ def get_bert_sentence_score(sentence, tokenizer, model, verifying = False):
     this_sentence_input, this_segment_ids, this_next_words = get_positions_from_encoded(this_single_sentence, this_single_segment, mask_token_int)
     
     this_logits = get_logits(this_sentence_input, this_segment_ids, model)
-        
-    # Omit the non-predicting words from the analysis.
-    this_next_words = this_next_words.view(-1, 1).long()
-    
+            
     this_probs = F.softmax(this_logits, dim = -1)
     this_probs = select_prediction_position(this_probs)
     
-    surprisals = new_model_funcs.get_next_word_surprisal(this_probs, this_next_words)
+    probs = new_model_funcs.get_next_word_probs(this_probs, this_next_words)
     
-    this_sum_score = torch.sum(surprisals).item() # This will be averaged in the main ipynb analysis.
+    this_sum_score = torch.sum(probs).item() # This will be averaged in the main ipynb analysis.
    
     return this_sum_score if not verifying else (this_sum_score, this_probs)
     
@@ -116,7 +110,9 @@ def score_sentences(sentences):
     tokenizer = BertTokenizer.from_pretrained("bert-large-uncased-whole-word-masking")
     
     all_scores = []
-    for sentence in sentences:
+    for idx, sentence in enumerate(sentences):
+        if idx % 50 == 0:
+            print(f'Index: {idx}')
         all_scores.append(get_bert_sentence_score(sentence, tokenizer, model))
     
     return all_scores
@@ -129,10 +125,6 @@ def get_logits(sentence_input, segments_ids, model):
         logits = outputs[0]
 
     return logits
-
-def decode_token_list(tokens, tokenizer):
-    result = tokenizer.convert_ids_to_tokens(tokens)
-    return result
 
 def report_mask_words(scores, sentence, tokenizer):
     """

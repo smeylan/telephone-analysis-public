@@ -7,8 +7,16 @@ import torch.nn.functional as F
 
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
 
+# 3/11: importlib help: https://stackoverflow.com/questions/1254370/reimport-a-module-in-python-while-interactive
+
+import importlib
+import new_models
+importlib.reload(new_models)
+
+import new_models
 from new_models import new_model_funcs
 from new_models.new_model_funcs import prepSentence
+
 
 def get_sentence_prefixes(raw_sentence, tokenizer):
     
@@ -38,14 +46,14 @@ def get_gpt2_sentence_score(sentence, tokenizer, model):
         sentence, a str, the raw sentence to be scored
         tokenizer, for GPT-2.
     Outputs:
-        this_sum_score, a float sum of the surprisal of the ground truth words 
+        this_sum_score, a float sum of the porbs of the ground truth words 
     """
     
     this_prefixes, this_ground_truth_tokens = get_sentence_prefixes(sentence, tokenizer)
     this_next_word_probs = get_next_word_probs(this_prefixes, tokenizer, model)
-    this_surprisal_targets = new_model_funcs.get_next_word_surprisal(this_next_word_probs, this_ground_truth_tokens)
+    this_probs_targets = new_model_funcs.get_next_word_probs(this_next_word_probs, this_ground_truth_tokens)
     
-    this_sum_score = torch.sum(this_surprisal_targets).item() # This will be averaged in the main ipynb analysis.
+    this_sum_score = torch.sum(this_probs_targets).item() # This will be averaged in the main ipynb analysis.
     return this_sum_score
 
 
