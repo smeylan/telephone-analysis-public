@@ -1,6 +1,13 @@
 import torch
+import pandas as pd
 
 # 3/5 Below function: Taken from Dr. Meylan's telephone_analysis.py
+
+def valid_mode(mode):
+    
+    return mode in {'single_word', 'sentence'}
+
+
 def prepSentence(x):
     """
     Big LM expects initial capitalization and sentences end with a period
@@ -15,6 +22,33 @@ def prepSentence(x):
     
     return(' '.join([remasked,'.']))
 
+def word_probs_to_df(selected_word_probs, ground_truth_word_idxs, tokenizer):
+    """
+    Converts a tensor of position prediction probabilities
+        to the df-form required by Logistic Regression notebooks.
+    Inputs:
+        selected_word_probs: of the ground truth words. The result of sentence scoring, before sentence-wise sum.
+            shape: (positions to predict,)
+        ground_truth_word_idxs: the tokenized form of the ground truth words
+            shape: (positions to predict,)
+    Outputs:
+        a List of df, such that each df has columns: "prob", "word"
+            corresponding to a single sentence run.
+        NOTE: Unlike the other functions in this repository, the EOS and "." removal
+            happens in the position extraction, not here.
+    """
+    
+    # Note, this is per sentence.
+    words = tokenizer.convert_ids_to_tokens(ground_truth_word_idxs)
+    probs = selected_word_probs.numpy()
+    
+    # 3/21/21: https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.from_dict.html#pandas.DataFrame.from_dict
+    df = pd.DataFrame.from_dict({'word' : words, 'prob' : probs})
+    
+    # 3/21/21: Note that for GPT-2 there will be a modified "G" before each word that has a space before it.
+    # https://github.com/openai/gpt-2/issues/80
+    
+    return df
 
 def get_next_word_probs(next_word_probs, target_word_tokens):
     

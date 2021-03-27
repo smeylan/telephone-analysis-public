@@ -110,12 +110,14 @@ def get_bert_sentence_score(sentence, tokenizer, model, verifying = False):
     """
     Verifying is just for use in some sanity checks.
     Removed some of the code for use in verifications (i.e. debugging)
+    
+    Note: This computes a probability, NOT a log10(Pr[word]).
     """
     
     probs, _, this_probs = get_bert_probabilities(sentence, tokenizer, model, 'sentence', verifying)
-    this_sum_score = torch.sum(probs).item() # This will be averaged in the main ipynb analysis.
+    this_prod_score = torch.prod(probs).item() # This will be averaged in the main ipynb analysis.
    
-    return this_sum_score if not verifying else (this_sum_score, this_probs)
+    return this_prod_score if not verifying else (this_sum_score, this_probs)
 
 def get_bert_word_score(sentence, tokenizer, model):
     

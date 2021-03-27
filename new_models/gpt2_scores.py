@@ -13,26 +13,38 @@ import importlib
 import new_models
 importlib.reload(new_models)
 
-import new_models
 from new_models import new_model_funcs
 from new_models.new_model_funcs import prepSentence
 
 
-def get_sentence_prefixes(raw_sentence, tokenizer):
+def get_sentence_prefixes(raw_sentence, tokenizer, mode):
     
     """
     Note: This also does capitalization, as well adding punctuation.
     """
     
+    
+    assert new_model_funcs.valid_mode(mode)
+    
     sentence = prepSentence(raw_sentence)
     
     tokens = tokenizer.encode(tokenizer.bos_token + sentence + tokenizer.eos_token)
-    prefixes = []; next_words = []
     
-    for idx in range(1, len(tokens)-2):
+    all_range = list(range(len(tokens)))
+    ranges = {
+        # These ranges indicate the index of the target word.
+        'single_word': all_range[1:-2] + all_range[-1:],
+        # Omit the period. 
+        'sentence' : all_range[1:-2]
+        # Per convention in telephone_analysis.py:
         # Omit the last word, the punctuation, and the EOS token in the prefixes.
         # The reason to omit the last word is because no prediction will be made using the last word as the end of the prefix,
         #   because that would be predicting on punctuation.
+    } 
+
+    prefixes = []; next_words = []
+    
+    for idx in ranges[mode]:
         this_prefix = tokens[:idx]
         this_next_word = tokens[idx]
         prefixes.append(this_prefix)
@@ -40,23 +52,61 @@ def get_sentence_prefixes(raw_sentence, tokenizer):
         
     return prefixes, torch.Tensor(next_words) 
  
-def get_gpt2_sentence_score(sentence, tokenizer, model):
+    
+def get_gpt2_target_word_probs(sentence, tokenizer, model, mode):
+    
     """
     Inputs:
         sentence, a str, the raw sentence to be scored
         tokenizer, for GPT-2.
     Outputs:
-        this_sum_score, a float sum of the porbs of the ground truth words 
+        probs_targets, a (position to predict,) Tensor of softmax probabilities (scores)
+            from ground truth words.
+        this_ground_truth_tokens, a (position to predict,) Tensor of IDs of words.
     """
     
-    this_prefixes, this_ground_truth_tokens = get_sentence_prefixes(sentence, tokenizer)
-    this_next_word_probs = get_next_word_probs(this_prefixes, tokenizer, model)
-    this_probs_targets = new_model_funcs.get_next_word_probs(this_next_word_probs, this_ground_truth_tokens)
+    assert new_model_funcs.valid_mode(mode)
     
-    this_sum_score = torch.sum(this_probs_targets).item() # This will be averaged in the main ipynb analysis.
-    return this_sum_score
+    this_prefixes, this_ground_truth_tokens = get_sentence_prefixes(sentence, tokenizer, mode)
+    this_next_word_probs = get_next_word_probs(this_prefixes, tokenizer, model)
+    probs_targets = new_model_funcs.get_next_word_probs(this_next_word_probs, this_ground_truth_tokens)
+    
+    return probs_targets, this_ground_truth_tokens
+    
+    
+def get_gpt2_sentence_score(sentence, tokenizer, model):
+    """
+    Inputs:
+        sentence, a str, the raw sentence to be scored
+        tokenizer, for GPT-2.
+        model, GPT-2.
+    Outputs:
+        this_prod_score, a float product of the probs of the ground truth words
+    This is a probability, but analysis requires log10(Pr[sentence])!
+    """
+    
+    this_probs_targets, _ = get_gpt2_target_word_probs(sentence, tokenizer, model, mode = 'sentence')
+    
+    this_prod_score = torch.prod(this_scores_targets).item() # This will be averaged in the main ipynb analysis.
+    return this_prod_score
 
-
+def get_gpt2_word_score(sentence, tokenizer, model):
+    
+    """
+    For a single sentence, return the Logistic Regression notebook style DF.
+    Inputs:
+        sentence, a str, the raw sentence to be scored
+        tokenizer, for GPT-2.
+        model, GPT-2.
+    Outputs:
+        the Logistic Regression notebook style DF.
+    """
+    
+    this_probs_targets, this_ground_truth_tokens = get_gpt2_target_word_probs(sentence, tokenizer, model, mode = 'single_word')
+    sentence_df = new_model_funcs.word_probs_to_df(this_probs_targets, this_ground_truth_tokens, tokenizer)
+    
+    return sentence_df
+    
 # The below function was generally based on/taken from the following:
 # 2/26 https://huggingface.co/transformers/quickstart.html
 # 2/27 information on variable-length batches: https://github.com/huggingface/transformers/issues/2001
@@ -83,14 +133,18 @@ def get_next_word_probs(sentences, tokenizer, model):
 
     return next_word_probs
 
-def score_sentences(sentences, model_type = '', verbose = True):
+def score_inputs(sentences, mode, model_type = '', verbose = True):
+    
     """
     This is the actual desired return of the main ipynb notebook.
     Inputs:
         sentences, a List of str.
         model_type, one of: medium, large, x
+        mode, 
     """
     
+    assert new_model_funcs.valid_mode(mode), "Mode must be either 'single_word' or 'sentence'."
+    scoring_func = get_gpt2_word_score if mode == 'single_word' else get_gpt2_sentence_score
     
     # 2/26: https://huggingface.co/transformers/model_doc/gpt2.html#gpt2lmheadmodel
     # GPT2LMHeadModel returns unnormalized probabilities over the next word -- requires softmax.
@@ -105,14 +159,14 @@ def score_sentences(sentences, model_type = '', verbose = True):
     model = GPT2LMHeadModel.from_pretrained(model_name)
     tokenizer = GPT2Tokenizer.from_pretrained(model_name)
 
-    sentence_scores = []
+    print(f'Scoring with mode: {mode}') 
+    scores = []
     for idx, this_sentence in enumerate(sentences):
-        if verbose and idx % 30 == 0:
-            print(idx)
-        sentence_scores.append(get_gpt2_sentence_score(this_sentence, tokenizer, model))
+        if verbose and idx % 50 == 0:
+            print(f'Index: {idx}')
+        scores.append(scoring_func(this_sentence, tokenizer, model))
         
-    return sentence_scores
-
+    return scores
 
 # Advice on how to incorporate attention, getting the next word
 #   2/26: https://stackoverflow.com/questions/62852940/how-to-get-immediate-next-word-probability-using-gpt2-model
