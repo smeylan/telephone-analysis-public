@@ -8,7 +8,7 @@ from os.path import join, exists
 import pickle
 
 import new_models
-from new_models import gpt2_scores, bert_scores
+from new_models import gpt2_scores, bert_scores, bart_scores
 import load_runs
 
 
@@ -62,6 +62,14 @@ def make_bert_word_scores(save_folder_path, prefix_only = False):
     
     pickle_word_predictions(prob_outputs, 'bert', save_folder_path)
     return prob_outputs
+
+def make_bart_word_scores(save_folder_path, prefix_only = False):
+    
+    inputs = get_inputs(prefix_only)
+    prob_outputs = bart_scores.score_inputs(inputs)
+    
+    pickle_word_predictions(prob_outputs, 'bart', save_folder_path)
+    return prob_outputs
         
     
 if __name__ == '__main__':
@@ -74,9 +82,10 @@ if __name__ == '__main__':
     if not os.path.exists(RESULTS_FOLDER):
         os.makedirs(RESULTS_FOLDER)
         
-    make_gpt2_word_scores(RESULTS_FOLDER)
-    make_gpt2_medium_word_scores(RESULTS_FOLDER)
-    make_bert_word_scores(RESULTS_FOLDER)
+    #make_gpt2_word_scores(RESULTS_FOLDER)
+    #make_gpt2_medium_word_scores(RESULTS_FOLDER)
+    #make_bert_word_scores(RESULTS_FOLDER)
+    make_bart_word_scores(RESULTS_FOLDER)
     
     print('Completed predictions')
     

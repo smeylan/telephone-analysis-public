@@ -30,13 +30,26 @@ def load_word_scores(model_name, results_folder):
     neg_surprisals = list(map(probability_to_negative_surprisal, raw_scores))
     return neg_surprisals
 
+def filter_eos_df(raw_df):
+    # Omit the EOS probabilities in sentence calculation
+    # 3/27 From line 805 reference
+    #   https://github.com/smeylan/telephone-analysis-public/blob/master/telephone_analysis.py
+
+    df = raw_df.copy()
+    # Note: EOS for GPT-2 is <|endoftext|>, for BERT is [SEP], for BART is </s>
+    for eos in ['<|endoftext|>', '[SEP]', '</s>']: 
+        df = df[df.word != eos]
+    
+    return df
+
 def load_sentence_scores(model_name, results_folder):
     """
     These are log10(Probability)
     """
-    
+
     def sum_scores(df):
-        return np.sum(df['prob'])
+        new_df = filter_eos_df(df)
+        return np.sum(new_df['prob'])
         
     word_neg_surprisals = load_word_scores(model_name, results_folder)
     sentence_scores = list(map(sum_scores, word_neg_surprisals))
