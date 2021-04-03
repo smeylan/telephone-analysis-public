@@ -8,7 +8,7 @@ from os.path import join, exists
 import pickle
 
 import new_models
-from new_models import gpt2_scores, bert_scores, bart_scores
+from new_models import model_score_funcs
 import load_runs
 
 
@@ -35,10 +35,10 @@ def pickle_word_predictions(score_outputs, model_name, save_folder):
        
     return score_outputs
     
-def make_gpt2_word_scores(save_folder_path, prefix_only = False):
+def make_gpt2_word_scores(save_folder_path, prefix_only = False, verbose = True):
     
     inputs = get_inputs(prefix_only)
-    prob_outputs = gpt2_scores.score_inputs(inputs, mode = 'single_word')
+    prob_outputs = model_score_funcs.get_gpt2_scores(inputs, verbose = verbose)
     
     pickle_word_predictions(prob_outputs, 'gpt2_normal', save_folder_path)
     print(len(prob_outputs))
@@ -46,27 +46,27 @@ def make_gpt2_word_scores(save_folder_path, prefix_only = False):
     return prob_outputs
                             
         
-def make_gpt2_medium_word_scores(save_folder_path, prefix_only = False):
+def make_gpt2_medium_word_scores(save_folder_path, prefix_only = False, verbose = True):
     
     inputs = get_inputs(prefix_only)
-    prob_outputs = gpt2_scores.score_inputs(inputs, mode = 'single_word', model_type = '-medium')
+    prob_outputs = model_score_funcs.get_gpt2_scores(inputs, '-medium', verbose = verbose)
     
     pickle_word_predictions(prob_outputs, 'gpt2_medium', save_folder_path)
     return prob_outputs
     
     
-def make_bert_word_scores(save_folder_path, prefix_only = False):
+def make_bert_word_scores(save_folder_path, prefix_only = False, verbose = True):
     
     inputs = get_inputs(prefix_only)
-    prob_outputs = bert_scores.score_inputs(inputs, mode = 'single_word')
+    prob_outputs = model_score_funcs.get_bert_scores(inputs, verbose = verbose)
     
     pickle_word_predictions(prob_outputs, 'bert', save_folder_path)
     return prob_outputs
 
-def make_bart_word_scores(save_folder_path, prefix_only = False):
+def make_bart_word_scores(save_folder_path, prefix_only = False, verbose = True):
     
     inputs = get_inputs(prefix_only)
-    prob_outputs = bart_scores.score_inputs(inputs)
+    prob_outputs = model_score_funcs.get_bart_scores(inputs, verbose = verbose)
     
     pickle_word_predictions(prob_outputs, 'bart', save_folder_path)
     return prob_outputs
@@ -82,9 +82,9 @@ if __name__ == '__main__':
     if not os.path.exists(RESULTS_FOLDER):
         os.makedirs(RESULTS_FOLDER)
         
-    #make_gpt2_word_scores(RESULTS_FOLDER)
-    #make_gpt2_medium_word_scores(RESULTS_FOLDER)
-    #make_bert_word_scores(RESULTS_FOLDER)
+    make_gpt2_word_scores(RESULTS_FOLDER)
+    make_gpt2_medium_word_scores(RESULTS_FOLDER)
+    make_bert_word_scores(RESULTS_FOLDER)
     make_bart_word_scores(RESULTS_FOLDER)
     
     print('Completed predictions')

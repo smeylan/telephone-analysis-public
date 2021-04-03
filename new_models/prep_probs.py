@@ -1,4 +1,4 @@
-## Used to convert precomputed probabilities from BERT, GPT-2, and GPT-2 Medium models
+## Used to convert precomputed probabilities from BERT, BART, GPT-2, and GPT-2 Medium models
 ## to the correct log10(Probability score) format.
 
 import pandas as pd
@@ -10,13 +10,13 @@ from os.path import join, exists
 
 def load_word_scores(model_name, results_folder):
     """
-    These are log10(Probability)
+    These will return the log10(Probability) scores used as inputs to Aggregate notebook.
     """
     
     def probability_to_negative_surprisal(this_df):
         # 3/27: https://www.geeksforgeeks.org/log-and-natural-logarithmic-value-of-a-column-in-pandas-python/
         col_name = 'prob'
-        this_df[col_name] = np.log10(this_df[col_name]) # How to do this?
+        this_df[col_name] = np.log10(this_df[col_name])
         return this_df
         
     
@@ -27,10 +27,14 @@ def load_word_scores(model_name, results_folder):
     with open(raw_scores_path, 'rb') as f:
         raw_scores = pickle.load(f)
     
-    neg_surprisals = list(map(probability_to_negative_surprisal, raw_scores))
+    # Always omit EOS from the calculations, for both word and sentence scoring.
+    filtered_raw_scores = list(map(filter_eos_df, raw_scores))
+    
+    neg_surprisals = list(map(probability_to_negative_surprisal, filtered_raw_scores))
     return neg_surprisals
 
 def filter_eos_df(raw_df):
+    
     # Omit the EOS probabilities in sentence calculation
     # 3/27 From line 805 reference
     #   https://github.com/smeylan/telephone-analysis-public/blob/master/telephone_analysis.py
