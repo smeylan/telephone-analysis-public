@@ -41,7 +41,6 @@ def make_gpt2_word_scores(save_folder_path, prefix_only = False, verbose = True)
     prob_outputs = model_score_funcs.get_gpt2_scores(inputs, verbose = verbose)
     
     pickle_word_predictions(prob_outputs, 'gpt2_normal', save_folder_path)
-    print(len(prob_outputs))
     
     return prob_outputs
                             

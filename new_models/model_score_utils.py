@@ -5,12 +5,19 @@ import pandas as pd
 
 from transformers import GPT2Tokenizer, BertForMaskedLM, GPT2LMHeadModel
 
-
-# 4/2: From Dr. Meylan's primary code
-def prepSentence(x): # Big LM expects initial capitalization and sentences end with a period
-    return(' '.join([x.capitalize(),'.']))
+def prepSentence(x):
+    """
+    Big LM expects initial capitalization and sentences end with a period
+    """
     
-
+    # Below: using .capitalize() will mess up BERT interpretation of [MASK] string.
+    # The replace below fixes this problem.
+    
+    raw_formatted = x.capitalize()
+    assert raw_formatted.count('[mask]') <= 1, '[mask] appears more than once in the BERT masking.'
+    remasked = raw_formatted.replace('[mask]', '[MASK]')
+    
+    return(' '.join([remasked,'.']))
     
 def get_model_probabilities(this_input, model, this_ground_truth_idx, prediction_position, verifying = False):
     
@@ -19,15 +26,12 @@ def get_model_probabilities(this_input, model, this_ground_truth_idx, prediction
         raw_logits = model(this_input.long().unsqueeze(0))
         logits = raw_logits['logits']
     
-    probs = F.softmax(logits, -1)
-    probs = probs[0, prediction_position, :]
-    # Processed per example, not per batch.
-    # Need to ask if LM per sentence is already capturing this.
-    ground_truth_prob = probs[this_ground_truth_idx].item()
-    
+        probs = F.softmax(logits, -1)
+        probs = probs[0, prediction_position, :]
+        # Processed per example, not per batch.
+        ground_truth_prob = probs[this_ground_truth_idx].item()
+
     return ground_truth_prob if not verifying else (ground_truth_prob, probs)
-
-
 
 def score_input(sentence, model, tokenizer, prefix_func):
     
