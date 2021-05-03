@@ -23,7 +23,7 @@ def get_model_probabilities(this_input, model, this_ground_truth_idx, prediction
     
     this_input = torch.Tensor(this_input)
     with torch.no_grad():
-        raw_logits = model(this_input.long().unsqueeze(0))
+        raw_logits = model(this_input.long().unsqueeze(0) if len(this_input.shape) == 1 else this_input.long())
         logits = raw_logits['logits']
     
         probs = F.softmax(logits, -1)

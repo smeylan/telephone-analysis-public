@@ -1,8 +1,13 @@
 import os
+from os.path import join, exists
+
 import pandas as pd
 
 import telephone_analysis
 import numpy as np
+
+import glob
+import pickle
 
 # 3/26: From the original Aggregate Chains.ipynb
 
@@ -89,3 +94,19 @@ def pickle_logistic_prep(data, model_name, save_folder):
     print(f'Saved per-word scores to {save_path}.')
        
     return data
+
+def load_logistic_prep(data_prep_folder = './intermediate_results/data_prep_logistic'):
+
+    model_names = [filename.split('logistic/')[1].split('_predictions.txt')[0]
+                   for filename in glob.glob(data_prep_folder+'/*')]
+
+    lm = {}
+
+    for lm_name in model_names:
+        raw_scores_path = join(data_prep_folder, f"{lm_name}_predictions.txt")
+        # 3/27: https://stackoverflow.com/questions/27745500/how-to-save-a-list-to-a-file-and-read-it-as-a-list-type
+        with open(raw_scores_path, 'rb') as f:
+            raw_scores = pickle.load(f)
+            lm[lm_name] = raw_scores
+     
+    return lm
