@@ -25,7 +25,7 @@ def get_model_probabilities(this_input, model, this_ground_truth_idx, prediction
     with torch.no_grad():
         raw_logits = model(this_input.long().unsqueeze(0) if len(this_input.shape) == 1 else this_input.long())
         logits = raw_logits['logits']
-    
+        
         probs = F.softmax(logits, -1)
         probs = probs[0, prediction_position, :]
         # Processed per example, not per batch.
