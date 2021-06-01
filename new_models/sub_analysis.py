@@ -13,9 +13,15 @@ def find_true_token_position(sentence, word, position, tokenizer):
     
     """
     Note: This does NOT consider the CLS. That adjustment is made separately.
+    This returns the 0-indexed position of "word" in the tokenized form of the sentence,
+        but does NOT include the CLS.
+    If the target word can't be found in the tokenized version of the sentence,
+        e.g. the word is broken up by the tokenizer,
+            then this returns -2.
     """
 
     tokenized = tokenizer.tokenize(sentence)
+    
     if isinstance(tokenizer, GPT2Tokenizer):
         tokenized = [this_str.strip('Ġ') for this_str in tokenized]
         
@@ -50,8 +56,8 @@ def process_single_substitution(raw_sentence, word, position, model, tokenizer, 
     this_ground_truth_idx = orig_tokens[position]
     
     logit_position = position if not isinstance(model, GPT2LMHeadModel) else position - 1
-    
     # GPT-2 stores the prediction for word i+1 at word i, so need to decrease the prediction position by 1.
+    
     result = model_score_utils.get_model_probabilities(this_token_prefix, model, this_ground_truth_idx, logit_position, verifying = verifying)
     
     # result is word_prob, all_probs if verifying, else, just the word_prob

@@ -46,7 +46,10 @@ def loadAndCombineRuns(runPath, runnames, minItemsInChain=0):
 ########################
     
 def load_runs():
-    return loadAndCombineRuns('output',['180419_AMT_lengthLimitedGPU.csv','180624_AMT_lengthLimitedGPU.csv'], 80)
+    all_runs = loadAndCombineRuns('output',['180419_AMT_lengthLimitedGPU.csv','180624_AMT_lengthLimitedGPU.csv'], 80)
+    # 6/1/21: https://www.geeksforgeeks.org/python-pandas-dataframe-insert/
+    all_runs.insert(0, 'sentence_id', np.arange(len(all_runs)))
+    return all_runs
 
 def postprocess_runs(filename):
     
@@ -82,6 +85,7 @@ def postprocess_runs(filename):
         all_runs[x] = all_runs[x].fillna(value="none")
         
     all_runs['thread_id'] = all_runs['global_chain'].map(str) + '_' + [str(x) for x in all_runs['stimulus_id']]
+    
     return all_runs
 
 def pickle_logistic_prep(data, model_name, save_folder):
