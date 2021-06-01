@@ -31,16 +31,13 @@ def find_true_token_position(sentence, word, position, tokenizer):
 
 
 def process_single_substitution(raw_sentence, word, position, model, tokenizer, prefix_func, verifying = False):
-    
-    return 8
 
     sentence = model_score_utils.prepSentence(raw_sentence)
     
     position = find_true_token_position(sentence, word, int(position), tokenizer) 
+
     # Note: above position is NOT with CLS added. This is accounted for in process_single_substitution. 
    
-    print('hello hello!', position)
-    
     if position == -2: return None
     # The desired token was probably fragmented by the tokenizer.
     # That is, the changed word couldn't be found in whole form after tokenization.
@@ -49,11 +46,9 @@ def process_single_substitution(raw_sentence, word, position, model, tokenizer, 
     # This is because CLS is not accounted for in the original index. This is for correctness of the prefixes.
     
     this_token_prefix, orig_tokens = prefix_func(sentence, tokenizer, [position])
-   
+    
     this_ground_truth_idx = orig_tokens[position]
-    if verifying:
-        print('Predicting for token: ', tokenizer.convert_ids_to_tokens([this_ground_truth_idx]))
-
+    
     logit_position = position if not isinstance(model, GPT2LMHeadModel) else position - 1
     
     # GPT-2 stores the prediction for word i+1 at word i, so need to decrease the prediction position by 1.
@@ -62,7 +57,7 @@ def process_single_substitution(raw_sentence, word, position, model, tokenizer, 
     # result is word_prob, all_probs if verifying, else, just the word_prob
 
     return result
-    
+
     
 def process_substitution_entry(df_entry, model, tokenizer, prefix_func, verifying = False):
     

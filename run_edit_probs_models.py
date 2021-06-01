@@ -2,8 +2,10 @@ import os
 from os.path import join, exists
 import pandas as pd
 
-from new_models import model_score_funcs, sub_analysis
+os.chdir('/home/nwong/chompsky/serial_chain/telephone-analysis-public')
 
+from new_models import model_score_funcs
+from new_models import sub_analysis
 
 def score_model(model_name, sub_df, save_data = True, prefix = False): 
     
@@ -21,7 +23,7 @@ def score_model(model_name, sub_df, save_data = True, prefix = False):
     
     # This is repeatedly updating the data in the new csv as new models are run.
     if save_data:
-        save_path = join(WORD_CHANGES_FOLDER, 'word_change_probs.csv')
+        save_path = join(WORD_CHANGES_FOLDER, f'word_change_probs_{model_name}.csv')
         sub_prob_df.to_csv(save_path)
         print(f'Writing probability dataframe to: {save_path}, for model results of {model_name}')
                                      

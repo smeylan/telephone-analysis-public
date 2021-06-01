@@ -76,7 +76,7 @@ if __name__ == '__main__':
     # Please note that these models output probabilities in both the word and sentence case,
     #    NOT log10(probability) scores.
     
-    RESULTS_FOLDER = './intermediate_results/new_models_probs/verify_only_delete'
+    RESULTS_FOLDER = './intermediate_results/new_models_probs'
 
     if not os.path.exists(RESULTS_FOLDER):
         os.makedirs(RESULTS_FOLDER)

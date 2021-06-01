@@ -24,14 +24,14 @@ def get_model_probabilities(this_input, model, this_ground_truth_idx, prediction
     this_input = torch.Tensor(this_input)
     with torch.no_grad():
         raw_logits = model(this_input.long().unsqueeze(0) if len(this_input.shape) == 1 else this_input.long())
-        logits = raw_logits['logits']
+        logits = raw_logits['logits'] 
         
-        probs = F.softmax(logits, -1)
-        probs = probs[0, prediction_position, :]
+        all_probs = F.softmax(logits, -1)
+        probs = all_probs[0, prediction_position, :]
         # Processed per example, not per batch.
         ground_truth_prob = probs[this_ground_truth_idx].item()
 
-    return ground_truth_prob if not verifying else (ground_truth_prob, probs)
+    return ground_truth_prob if not verifying else (ground_truth_prob, probs, all_probs)
 
 def score_input(sentence, model, tokenizer, prefix_func):
     

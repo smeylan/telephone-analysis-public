@@ -6,6 +6,8 @@ import os
 import pickle
 import numpy as np
 
+import glob
+
 from os.path import join, exists
 
 
@@ -17,7 +19,7 @@ def probability_to_negative_surprisal(this_df):
     return this_df
     
     
-def load_word_scores(model_name, results_folder):
+def load_word_scores(model_name, results_folder, give_probs = False):
     """
     These will return the log10(Probability) scores used as inputs to Aggregate notebook.
     """
@@ -31,8 +33,10 @@ def load_word_scores(model_name, results_folder):
     # Always omit EOS from the calculations, for both word and sentence scoring.
     filtered_raw_scores = list(map(filter_eos_punct_df, raw_scores))
     
+    if give_probs: # Don't convert to negative surprisals
+        return filtered_raw_scores
+    
     neg_surprisals = list(map(probability_to_negative_surprisal, filtered_raw_scores))
-        
     return neg_surprisals
 
 def filter_eos_punct_df(raw_df):
@@ -63,3 +67,39 @@ def load_sentence_scores(model_name, results_folder):
     sentence_scores = list(map(sum_scores, word_neg_surprisals))
     
     return sentence_scores
+
+def load_postprocessed_logistic_prep_scores(data_prep_folder, model_name = ''):
+    
+    """
+    Loads the NaN-aligned scores postprocessed in the Data Prep notebook.
+    """
+    
+    model_names = [filename.split('logistic/')[1].split('_predictions.txt')[0]
+               for filename in glob.glob(data_prep_folder+'/*')] if not model_name else [model_name]
+
+    lm = {}
+
+    for lm_name in model_names:
+        raw_scores_path = join(data_prep_folder, f"{lm_name}_predictions.txt")
+        # 3/27: https://stackoverflow.com/questions/27745500/how-to-save-a-list-to-a-file-and-read-it-as-a-list-type
+        with open(raw_scores_path, 'rb') as f:
+            raw_scores = pickle.load(f)
+            lm[lm_name] = raw_scores
+            
+    return lm
+
+def load_word_changes(folder, model_name = ''):
+    """
+    Loads the NaN-aligned scores postprocessed in the Data Prep notebook.
+    """
+    
+    model_names = ['gpt2_normal', 'gpt2_medium', 'bert', 'bart']
+    lm = {}
+
+    for lm_name in model_names:
+        raw_scores_path = join(folder, f"word_change_probs_{lm_name}.csv")
+        lm[lm_name] = pd.read_csv(raw_scores_path)
+            
+    return lm
+
+    
