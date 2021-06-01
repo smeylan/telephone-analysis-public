@@ -4,8 +4,7 @@ import pandas as pd
 
 os.chdir('/home/nwong/chompsky/serial_chain/telephone-analysis-public')
 
-from new_models import model_score_funcs
-from new_models import sub_analysis
+from new_models import model_score_funcs, sub_analysis
 
 def score_model(model_name, sub_df, save_data = True, prefix = False): 
     
@@ -16,6 +15,7 @@ def score_model(model_name, sub_df, save_data = True, prefix = False):
         'bart': model_score_funcs.get_bart_modules(),
     }
     
+    # Note to self: If it says "syntax error" on this line you need to activate your environment.
     assert model_name in model_spec_dict.keys(), f'Invalid model name. Options are: {list(model_spec_dict.keys())}'
     
     model, tokenizer, prefix_func = model_spec_dict[model_name]

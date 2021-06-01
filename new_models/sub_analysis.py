@@ -53,8 +53,6 @@ def process_single_substitution(raw_sentence, word, position, model, tokenizer, 
     
     this_token_prefix, orig_tokens = prefix_func(sentence, tokenizer, [position])
     
-    print('token prefixes', tokenizer.convert_ids_to_tokens(this_token_prefix[0]))
-    
     this_ground_truth_idx = orig_tokens[position]
     
     logit_position = position if not isinstance(model, GPT2LMHeadModel) else position - 1
