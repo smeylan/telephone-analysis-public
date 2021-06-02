@@ -21,7 +21,7 @@ def find_true_token_position(sentence, word, position, tokenizer):
     """
 
     tokenized = tokenizer.tokenize(sentence)
-    
+   
     if isinstance(tokenizer, GPT2Tokenizer):
         tokenized = [this_str.strip('Ġ') for this_str in tokenized]
         
